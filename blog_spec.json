@@ -1,0 +1,22 @@
+[{
+    "link": "https://otee.dev/feed.xml",
+    "filter": {
+        "includes_any": [
+            "js",
+            "javascript"
+        ],
+        "excludes_all": [
+            "travel"
+        ]
+    },
+    "twitter_username": "@oteecodes"
+},
+{
+    "link": "https://github.com/jekyll/jekyll-feed",
+    "filter":{
+        "includes_any": ["blah"],
+        "excludes_all": ["XD"]
+    },
+    "twitter_username": "@at"
+}
+]
