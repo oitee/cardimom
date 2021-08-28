@@ -41,6 +41,7 @@ function parseAtom(parsed) {
     if (!date) {
       date = getElementText(listOfEntries[i], "updated");
     }
+    currentPost.date = date;
     let content = getElementText(listOfEntries[i], "content");
     if (!content) {
       content = getElementText(listOfEntries[i], "summary");
