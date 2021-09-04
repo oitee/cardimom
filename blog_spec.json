@@ -2,21 +2,20 @@
     "link": "https://otee.dev/feed.xml",
     "filter": {
         "includes_any": [
-            "js",
-            "javascript"
+            "implement"
         ],
         "excludes_all": [
-            "travel"
+            "LISP"
         ]
     },
     "twitter_username": "@oteecodes"
 },
 {
-    "link": "https://github.com/jekyll/jekyll-feed",
+    "link": "https://amontalenti.com/feed",
     "filter":{
-        "includes_any": ["blah"],
-        "excludes_all": ["XD"]
+        "includes_any": ["there", "very"],
+        "excludes_all": ["XD", "chotu"]
     },
-    "twitter_username": "@at"
+    "twitter_username": "@test"
 }
 ]

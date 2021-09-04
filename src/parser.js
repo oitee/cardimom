@@ -23,7 +23,9 @@ function parseRSS(parsed) {
   for (let i = 0; i < listOfItems.length; i++) {
     let currentPost = {};
     currentPost.title = getElementText(listOfItems[i], "title");
-    currentPost.date = getElementText(listOfItems[i], "pubDate");
+    let date = getElementText(listOfItems[i], "pubDate");
+    let dateStd = convertDate(date);
+    currentPost.date = dateStd;
     currentPost.content = getElementText(listOfItems[i], "description");
     currentPost.link = getElementText(listOfItems[i], "link");
     allPosts.push(currentPost);
@@ -41,7 +43,8 @@ function parseAtom(parsed) {
     if (!date) {
       date = getElementText(listOfEntries[i], "updated");
     }
-    currentPost.date = date;
+    let dateStd = convertDate(date);
+    currentPost.date = dateStd;
     let content = getElementText(listOfEntries[i], "content");
     if (!content) {
       content = getElementText(listOfEntries[i], "summary");
@@ -59,3 +62,10 @@ function getElementText(listOfElements, tag) {
   }
   return;
 }
+
+function convertDate(str){
+  let dateMilli = Date.parse(str);
+  return dateMilli;  
+}
+
+
