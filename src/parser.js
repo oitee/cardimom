@@ -27,8 +27,14 @@ function parseRSS(parsed) {
     let dateStd = convertDate(date);
     currentPost.date = dateStd;
     currentPost.content = getElementText(listOfItems[i], "description");
-    currentPost.link = getElementText(listOfItems[i], "link");
-    allPosts.push(currentPost);
+    let link = getElementText(listOfItems[i], "link");
+    let linkStd = confirmLink(link);
+    if(linkStd != ""){
+      currentPost.link = linkStd;
+      allPosts.push(currentPost);
+    }
+    
+    
   }
   return allPosts;
 }
@@ -50,8 +56,14 @@ function parseAtom(parsed) {
       content = getElementText(listOfEntries[i], "summary");
     }
     currentPost.content = content;
-    currentPost.link = getElementText(listOfEntries[i], "id");
-    allPosts.push(currentPost);
+    let link = getElementText(listOfEntries[i], "id");
+    let linkStd = confirmLink(link);
+    if(linkStd != ""){
+      currentPost.link = linkStd;    
+      allPosts.push(currentPost);
+    }
+    
+    
   }
   return allPosts;
 }
@@ -68,4 +80,25 @@ function convertDate(str){
   return dateMilli;  
 }
 
+function confirmLink(str){
+  let linkStd = "";
+  try{
+    let urlObject = new URL(str);
+    let protocol = urlObject.protocol;
+    if(protocol != "https:"){
+      console.log("protocol no https:");
+      return linkStd;
+    }
+    let origin = urlObject.origin;
+    // let hostName = urlObject.hostname;
+    let path = urlObject.pathname;
+    linkStd = origin + path;
+  }
+  catch(e){}
+  return linkStd;
+}
+
+console.log(confirmLink("https://otee.dev/2021/07/19/creating-objects-in-javascript.html"));
+console.log(confirmLink("www") == "");
+console.log(confirmLink("http://otee.dev/2021/07/19/creating-objects-in-javascript.html"))
 
