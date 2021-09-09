@@ -85,12 +85,11 @@ function confirmLink(str){
   try{
     let urlObject = new URL(str);
     let protocol = urlObject.protocol;
-    if(protocol != "https:"){
-      console.log("protocol no https:");
+    if(protocol != "https:" && protocol != "http:"){
+      console.log("protocol not supported:" + str);
       return linkStd;
     }
     let origin = urlObject.origin;
-    // let hostName = urlObject.hostname;
     let path = urlObject.pathname;
     linkStd = origin + path;
   }
@@ -98,7 +97,4 @@ function confirmLink(str){
   return linkStd;
 }
 
-console.log(confirmLink("https://otee.dev/2021/07/19/creating-objects-in-javascript.html"));
-console.log(confirmLink("www") == "");
-console.log(confirmLink("http://otee.dev/2021/07/19/creating-objects-in-javascript.html"))
 
