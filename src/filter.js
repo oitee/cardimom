@@ -16,8 +16,8 @@ export function select(listOfPosts, includes, excludes) {
 function satisfies(post, includes, excludes) {
   let lowerCaseContent = post.content.toLowerCase();
   return (
-    includesAny(lowerCaseContent, includes) &&
-    !includesAny(lowerCaseContent, excludes)
+    (includes.length == 0 || includesAny(lowerCaseContent, includes)) &&
+    (excludes.length == 0 || !includesAny(lowerCaseContent, excludes))
   ); //de morgans law (!A & !B) = !(A or B)
 }
 
