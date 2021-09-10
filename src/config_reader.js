@@ -1,4 +1,5 @@
 import { readFileSync } from "fs";
+let listOfLinks = new Set();
 
 export function reader(path) {
   try {
@@ -13,8 +14,9 @@ export function reader(path) {
           blog.hasOwnProperty("filter") &&
           blog.hasOwnProperty("twitter_username")
         ) {
-          if (typeof blog.link == "string" && blog.link.length != 0) {
+          if (typeof blog.link == "string" && blog.link.length != 0 && !(listOfLinks.has(blog.link))) {
             currentBlog.link = blog.link;
+            listOfLinks.add(blog.link);
           }
           if (typeof blog.filter == "object") {
             let keysFilter = Object.keys(blog.filter);
