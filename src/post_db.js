@@ -1,12 +1,18 @@
 import pg from "pg";
 const { Pool } = pg;
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL, // format: postgres://user:password@host:5432/database [https://node-postgres.com/api/client]
-  connectionTimeoutMillis: 10000, // [https://node-postgres.com/api/pool]
-  idleTimeoutMillis: 60000,
-  max: 2
-});
+let pool; 
+
+
+export function poolStart(databaseURL){
+  
+  pool = new Pool({
+    connectionString: databaseURL, // format: postgres://user:password@host:5432/database [https://node-postgres.com/api/client]
+    connectionTimeoutMillis: 10000, // [https://node-postgres.com/api/pool]
+    idleTimeoutMillis: 60000,
+    max: 2
+  });
+} 
 
 export async function poolEnd(){
   await pool.end();

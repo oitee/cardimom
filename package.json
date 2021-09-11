@@ -18,12 +18,12 @@
   "homepage": "https://github.com/oitee/cardimom#readme",
   "dependencies": {
     "jsdom": "^17.0.0",
-    "mocha": "^9.1.0",
     "node-fetch": "^2.6.1",
     "pg": "^8.7.1"
   },
   "type": "module",
   "devDependencies": {
+    "expect": "^27.1.1",
     "jest": "^27.1.0"
   },
   "jest": {
