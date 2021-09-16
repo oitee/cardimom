@@ -1,6 +1,6 @@
 import * as config_reader from "../src/config_reader.js";
 import * as fetcher from "../src/fetcher.js";
-import * as newPosts from "../src/post_db.js";
+import * as db from "../src/post_db.js";
 import * as assert from "assert";
 
 /*
@@ -38,9 +38,9 @@ async function runner(config) {
   let listOfPosts = await Promise.all(listOfBlogs.map(fetcher.findPosts));
   listOfPosts = listOfPosts.flatMap((post) => post);
 
-  listOfPosts = await newPosts
+  listOfPosts = await db
     .selectNewPosts(listOfPosts)
-    .then(newPosts.addNewPosts);
+    .then(db.addNewPosts);
   return createMockTweets(listOfPosts);
 }
 
@@ -121,13 +121,13 @@ test("duplicated config-- idempotent run", async () => {
 
 beforeAll(async () => {
   await client.connect();
-  newPosts.poolStart(
+  db.poolStart(
     "postgres://postgres:test123@localhost:5432/cardimom_test"
   );
 });
 
 afterAll(async () => {
   await deleteAllPosts();
-  await newPosts.poolEnd();
+  await db.poolEnd();
   await client.end();
 });
