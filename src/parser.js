@@ -34,21 +34,33 @@ async function parseRSS(parsed) {
     
     let date = getElementText(listOfItems[i], "pubDate");
     let dateStd = convertDate(date);
-    if(dateStd > lastUpdated){
-    currentPost.date = dateStd;
-    currentPost.title = getElementText(listOfItems[i], "title");
-    currentPost.content = getElementText(listOfItems[i], "description");
+    if(!dateStd || typeof dateStd !== "number" || dateStd < lastUpdated){
+      dateStd = false;
+    }
+    // if(dateStd > lastUpdated){
+    //currentPost.date = dateStd;
+    let title = getElementText(listOfItems[i], "title");
+    if(!title || typeof title !== "string"){
+      title = false;
+    }
+    let content = getElementText(listOfItems[i], "description");
+    if(!content || typeof content !== "string"){
+      content = false;
+    }
     let link = getElementText(listOfItems[i], "link");
     let linkStd = confirmLink(link);
-    if(linkStd != ""){
+    if(linkStd && content && title && dateStd){
+      currentPost.title = title;
+      currentPost.date = dateStd;
+      currentPost.content = content;
       currentPost.link = linkStd;
       allPosts.push(currentPost);
     }
-  }
+  //}
     
     
   }
-  console.log(allPosts);
+  //console.log(allPosts);
   return allPosts;
 }
 
@@ -68,23 +80,32 @@ async function parseAtom(parsed) {
       date = getElementText(listOfEntries[i], "updated");
     }
     let dateStd = convertDate(date);
-    if(dateStd > lastUpdated){
-
-    
-      currentPost.date = dateStd;
-      currentPost.title = getElementText(listOfEntries[i], "title");
-      let content = getElementText(listOfEntries[i], "content");
-      if (!content) {
-        content = getElementText(listOfEntries[i], "summary");
-      }
-      currentPost.content = content;
+    if(!dateStd|| typeof dateStd !== "number" || dateStd < lastUpdated){
+      dateStd = false;
+    }
+    // if(dateStd > lastUpdated){    
+    // currentPost.date = dateStd;
+    let title = getElementText(listOfEntries[i], "title");
+    if(!title || typeof title !== "string"){
+      title = false;
+    }
+    let content = getElementText(listOfEntries[i], "content");
+    if (!content) {
+      content = getElementText(listOfEntries[i], "summary");
+    }
+    if(!content|| typeof content !== "string"){
+      content = false;
+    }
       let link = getElementText(listOfEntries[i], "id");
       let linkStd = confirmLink(link);
-      if(linkStd != ""){
+      if(linkStd && title && content && dateStd){
+        currentPost.title = title;
+        currentPost.date = dateStd;
+        currentPost.content = content;
         currentPost.link = linkStd;    
         allPosts.push(currentPost);
       }
-  }
+  // }
     
     
   }
@@ -104,19 +125,21 @@ function convertDate(str){
 }
 
 function confirmLink(str){
-  let linkStd = "";
+  let linkStd;
   try{
     let urlObject = new URL(str);
     let protocol = urlObject.protocol;
     if(protocol != "https:" && protocol != "http:"){
-      console.log("protocol not supported:" + str);
-      return linkStd;
+      //console.log("protocol not supported:" + str);
+      return false;
     }
     let origin = urlObject.origin;
     let path = urlObject.pathname;
     linkStd = origin + path;
   }
-  catch(e){}
+  catch(e){
+    return false;
+  }
   return linkStd;
 }
 
