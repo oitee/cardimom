@@ -53,3 +53,18 @@ export async function addNewPosts(postList) {
   }
   return postList;
 }
+
+export async function lastUpdated(){
+  const client = await pool.connect();
+  let res;
+  try{
+    res = await client.query ("select max(posted_at) from posts");
+  }
+  catch(e){
+    console.error(e);
+  }
+  finally{
+    client.release();
+  }
+  return res.rows[0].max;
+}

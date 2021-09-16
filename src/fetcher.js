@@ -8,7 +8,7 @@ export async function findPosts(blog){//rename
   let feedText = await fetcher(url);
   if (feedText !== undefined) {
     try {
-       listOfPosts = feedParser.parse(feedText);
+       listOfPosts = await feedParser.parse(feedText);
        listOfPosts.map(post => {
          post.twitter_username = blog.twitter_username;
          post.filter = blog.filter;
