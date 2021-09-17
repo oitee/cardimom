@@ -47,7 +47,7 @@ async function tweet(credentials, tweetPost) {
       else {
         // some other kind of error, e.g. read-only API trying to POST
         console.error(
-          `Error in posting this tweet: ${tweetPost}. Error message: ${e.errors}`
+          `Error in posting this tweet: ${tweetPost}. Error message: ${JSON.stringify(e)}`
         );
       }
     } else {
