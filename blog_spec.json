@@ -1,47 +1,22 @@
-[{
-    "link": "https://otee.dev/feed.xml",
-    "filter": {
-        "includes_any": [
-            "implement"
-        ],
-        "excludes_all": [
-            "LISP"
-        ]
+[
+    {
+        "link": "https://otee.dev/feed.xml",
+        "filter": {
+            "includes_any": [
+            ],
+            "excludes_all": [
+            ]
+        },
+        "twitter_username": "@oteecodes"
     },
-    "twitter_username": "@oteecodes"
-},
-{
-    "link": "https://amontalenti.com/feed",
-    "filter":{
-        "includes_any": ["there", "very"],
-        "excludes_all": ["XD", "chotu"]
-    },
-    "twitter_username": "@test"
-},
-{
-    "link": "http://blog.klipse.tech/feed.xml",
-    "filter":{
-        "includes_any": ["snippet", "object"],
-        "excludes_all": ["law", "india"]
-    },
-    "twitter_username": "@test123"
-},
-{
-    "link": "http://engineering.mayvenn.com/feed.xml",
-    "filter":{
-        "includes_any": [],
-        "excludes_all": []
-    },
-    "twitter_username": "@test1234"
-},
-{
-    "link": "https://mourjo.me/blog/feed.xml",
-    "filter":{
-        "includes_any": ["a"],
-        "excludes_all": []
-    },
-    "twitter_username": "@mourjo_sen"
-}
+    {
+        "link": "https://mourjo.me/blog/feed.xml",
+        "filter": {
+            "includes_any": [
+                "engineering", "computer"
+            ],
+            "excludes_all": ["life"]
+        },
+        "twitter_username": "@mourjo_sen"
+    }
 ]
-
-
