@@ -28,6 +28,7 @@ async function launch() {
   } catch (e) {
     console.error(`Something went wrong: ${e}`);
   }
+  console.log("Finished reading blogs");
 }
-
-setInterval(launch, 120000);
+await launch();
+setInterval(launch, 60*60*1000);

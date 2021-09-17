@@ -26,11 +26,15 @@ async function tweet(credentials, tweetPost) {
     access_token_secret: credentials.accessTokenSecret, // from your User (oauth_token_secret)
   });
   try {
-    console.log(`Posting this tweet: ${tweetPost}`);
-    await client.post("statuses/update", {
-      status: tweetPost,
-      auto_populate_reply_metadata: true
-    });
+    if (process.env.DRY_RUN) {
+      console.log(`Not tweeting due to DRY_RUN setting: ${tweetPost}`);
+    } else {
+      console.log(`Posting this tweet: ${tweetPost}`);
+      await client.post("statuses/update", {
+        status: tweetPost,
+        auto_populate_reply_metadata: true,
+      });
+    }
   } catch (e) {
     console.error(
       `Error in posting this tweet: ${tweetPost}. Error message: ${e}`
