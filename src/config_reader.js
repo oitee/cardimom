@@ -1,3 +1,9 @@
+/**
+ * Accepts a config (an array of blogs submitted by contributors) as parameter and returns an array of blogs that contain every single valid property
+ * @param {[object]} config
+ * @returns {[object]}
+ */
+
 export function reader(config) {
   try {
     let setOfLinks = new Set();

@@ -1,6 +1,11 @@
 import { JSDOM } from "jsdom";
 import * as db from "./post_db.js";
 
+/**
+ * Parses an xml feed passed to it and returns an array of objects representing the requisite properties of each post 
+ * @param {string} xml
+ * @returns {[object]}
+ */
 export async function parse(xml) {
   const parsed = new JSDOM(xml, {
     contentType: "text/xml",
@@ -37,8 +42,6 @@ async function parseRSS(parsed) {
     if(!dateStd || typeof dateStd !== "number" || dateStd < lastUpdated){
       dateStd = false;
     }
-    // if(dateStd > lastUpdated){
-    //currentPost.date = dateStd;
     let title = getElementText(listOfItems[i], "title");
     if(!title || typeof title !== "string"){
       title = false;
@@ -56,11 +59,8 @@ async function parseRSS(parsed) {
       currentPost.link = linkStd;
       allPosts.push(currentPost);
     }
-  //}
-    
-    
+      
   }
-  //console.log(allPosts);
   return allPosts;
 }
 
@@ -83,8 +83,6 @@ async function parseAtom(parsed) {
     if(!dateStd|| typeof dateStd !== "number" || dateStd < lastUpdated){
       dateStd = false;
     }
-    // if(dateStd > lastUpdated){    
-    // currentPost.date = dateStd;
     let title = getElementText(listOfEntries[i], "title");
     if(!title || typeof title !== "string"){
       title = false;
@@ -105,9 +103,6 @@ async function parseAtom(parsed) {
         currentPost.link = linkStd;    
         allPosts.push(currentPost);
       }
-  // }
-    
-    
   }
   return allPosts;
 }

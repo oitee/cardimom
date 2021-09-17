@@ -1,5 +1,6 @@
 /**
- * [description: selects a list of posts etc]
+ * Accepts an array of posts(objects), an arrays of strings that should be present and/or absent in each post (as per filter logic)
+ * Returns an array of posts which satisfy the inclusion and exclusion logic
  * @param {[object]} listOfPosts
  * @param {[string]} includes
  * @param {[string]} excludes

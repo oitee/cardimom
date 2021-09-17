@@ -2,7 +2,12 @@ import fetch from "node-fetch";
 import * as feedParser from "./parser.js";
 import * as filter from "./filter.js"
 
-export async function findPosts(blog){//rename
+/**
+ * Accepts a blog (object) and returns a list of posts (after applying filter logic) published by the blog object
+ * @param {object} blog
+ * @returns {[object]}
+ */
+export async function findPosts(blog){
   let listOfPosts = [];
   let url = blog.link;
   let feedText = await fetcher(url);

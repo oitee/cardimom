@@ -3,7 +3,10 @@ const { Pool } = pg;
 
 let pool; 
 
-
+/**
+ * Creates a new Pool object by using the databaseURL passed to it
+ * @param {string} databaseURL
+ */
 export function poolStart(databaseURL){
   
   pool = new Pool({
@@ -14,10 +17,20 @@ export function poolStart(databaseURL){
   });
 } 
 
+/**
+ * Ends the pool connection
+ */
 export async function poolEnd(){
   await pool.end();
 }
 
+/**
+ * Accepts an array of posts(objects) and checks with the list of posts already existing in the database, 
+ * by comparing whether the `post.link` property of each post object is present in the `link` column of the database. 
+ * Returns an array of posts(objects) that are not present in the database
+ * @param {[object]} listOfPosts
+ * @returns {[object]}
+ */
 export async function selectNewPosts(listOfPosts) {
   let allLinks =  listOfPosts.map(post => post.link);
   let res;
@@ -36,7 +49,13 @@ export async function selectNewPosts(listOfPosts) {
   return newPosts;
 }
 
-
+/**
+ * Accepts an array of posts (objects) as parameters and adds their requisite details to the database
+ * @param {[object]} listOfPosts
+ * @param {[string]} includes
+ * @param {[string]} excludes
+ * @returns {[object]}
+ */
 export async function addNewPosts(postList) {
   const client = await pool.connect();
   try {
@@ -53,7 +72,10 @@ export async function addNewPosts(postList) {
   }
   return postList;
 }
-
+/**
+ * Returns the most recent timestamp from the `posted_at` column of the database
+ * @returns {number}
+ */
 export async function lastUpdated(){
   const client = await pool.connect();
   let res;
@@ -66,5 +88,5 @@ export async function lastUpdated(){
   finally{
     client.release();
   }
-  return res.rows[0].max;
+  return Date.parse(res.rows[0].max);
 }
