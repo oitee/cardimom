@@ -15,7 +15,7 @@
             "includes_any": [
                 "engineering", "computer"
             ],
-            "excludes_all": ["Load Shedding in Clojure"]
+            "excludes_all": ["Load Shedding in Clojure", "Rastapopoulos"]
         },
         "twitter_username": "@mourjo_sen"
     }
