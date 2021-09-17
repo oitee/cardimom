@@ -1,25 +1,10 @@
-import { readFileSync } from "fs";
 import * as fetcher from "../src/fetcher.js";
 import * as config_reader from "../src/config_reader.js";
 import * as db from "../src/post_db.js";
-import * as twitter from "../src/twitter.js";
 import pg from "pg";
 import * as assert from "assert";
 
-//import jest
-//write runner: to replicate launcher
-//write a config with another blog site.
-//write filter
-//write a function for mock tweets
-//test1: pass config to runner, it should return an array of new Posts.
-//pass array to mock tweets, it will pass an array (author + title+ link). Convert to set.
-//do the test. assert.ok - both has and !has
-// idempotem run- pass config to runner, and then to mock. This should be empty array
-//do the test. assert.ok- all empty
-//import pg
-//beforeall: establish connection (with testdb), delete all
-//afterall: deleteall, end connection, poolend
-//
+
 const { Client } = pg;
 let client = new Client({
   connectionString:
@@ -33,11 +18,20 @@ async function deleteAll() {
     console.error(e);
   }
 }
-async function deleteOne(){
-    try{
-        await client.query(delete from posts limit )
-    }
+
+async function deleteLatestPost(){
+  try{
+    let res = await client.query("SELECT MAX(published_at) FROM posts");
+    let lastPublished = res.rows[0].max;
+    await client.query("DELETE FROM posts WHERE published_at = ($1)", [lastPublished]);
+    let newPostDate = new Date (Date.parse(lastPublished) - 1000);
+    await client.query("UPDATE posts SET posted_at = ($1)", [newPostDate]);
+  }
+  catch(e){
+    console.error(e);
+  }
 }
+
 async function runner(config) {
   let listOfBlogs = config_reader.reader(config);
   let listOfPosts = await Promise.all(listOfBlogs.map(fetcher.findPosts));
@@ -89,6 +83,12 @@ test("idempotent run", async () => {
     let setOfTweets = await runner(config);
     assert.ok(setOfTweets.size == 0);
   });
+
+test("test after deleting most recent post", async () =>{
+  await deleteLatestPost();
+  let setOfTweets = await runner(config);
+  assert.ok(setOfTweets.size == 1);
+});
 // ==========================================================
 
 beforeAll(async () => {
