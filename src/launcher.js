@@ -30,4 +30,4 @@ async function launch() {
   }
 }
 
-setInterval(launch, 5000);
+setInterval(launch, 120000);
