@@ -1,7 +1,7 @@
 import Twitter from "twitter-lite";
 
 export async function publishTweets(credentials, posts) {
-  let listOfTweets = keep(posts, post => {
+  let listOfTweets = keep(posts, (post) => {
     let tweet = `New blog post by ${post.twitter_username}: ${post.title} ${post.link}`;
     if (tweet.length > 280) {
       tweet = `${post.twitter_username} posted ${post.link}`;
@@ -11,7 +11,9 @@ export async function publishTweets(credentials, posts) {
     }
     return tweet;
   });
-  await Promise.all(listOfTweets.map(tweetPost => tweet(credentials, tweetPost)));
+  await Promise.all(
+    listOfTweets.map((tweetPost) => tweet(credentials, tweetPost))
+  );
 }
 
 async function tweet(credentials, tweetPost) {
@@ -23,11 +25,18 @@ async function tweet(credentials, tweetPost) {
     access_token_key: credentials.accessTokenKey, // from your User (oauth_token)
     access_token_secret: credentials.accessTokenSecret, // from your User (oauth_token_secret)
   });
-  console.log(tweetPost);
-  //   await client.post("statuses/update", {
-  //     status: "Hello World! Stay tuned, while I get ready to publish interesting blog posts on JavaScript and much more!",
-  //     auto_populate_reply_metadata: true,
-  //   });
+  try {
+    console.log(`Posting this tweet: ${tweetPost}`);
+    await client.post("statuses/update", {
+      status: tweetPost,
+      auto_populate_reply_metadata: true
+    });
+  } catch (e) {
+    console.error(
+      `Error in posting this tweet: ${tweetPost}. Error message: ${e}`
+    );
+    throw e;
+  }
 }
 
 function keep(list, mapper) {

@@ -1,1 +1,1 @@
-worker:  node src/launcher.js
+worker: node src/launcher.js
