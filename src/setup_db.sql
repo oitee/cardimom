@@ -9,3 +9,4 @@ create table if not exists posts (
     posted_at timestamp with time zone,
     published_at timestamp with time zone
 );
+
