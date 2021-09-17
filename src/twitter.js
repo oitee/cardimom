@@ -36,10 +36,23 @@ async function tweet(credentials, tweetPost) {
       });
     }
   } catch (e) {
-    console.error(
-      `Error in posting this tweet: ${tweetPost}. Error message: ${e}`
-    );
-    throw e;
+    if ("errors" in e) {
+      // Twitter API error
+      if (e.errors[0].code === 88)
+        // rate limit exceeded
+        console.log(
+          "Rate limit will reset on",
+          new Date(e._headers.get("x-rate-limit-reset") * 1000)
+        );
+      else {
+        // some other kind of error, e.g. read-only API trying to POST
+        console.error(
+          `Error in posting this tweet: ${tweetPost}. Error message: ${e.errors}`
+        );
+      }
+    } else {
+      console.error(`Unrecognised error: ${e}`);
+    }
   }
 }
 
