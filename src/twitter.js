@@ -20,10 +20,10 @@ async function tweet(credentials, tweetPost) {
   const client = new Twitter({
     subdomain: "api", // "api" is the default (change for other subdomains)
     version: "1.1", // version "1.1" is the default (change for other subdomains)
-    consumer_key: credentials.consumerKey, // from Twitter.
-    consumer_secret: credentials.consumerSecret, // from Twitter.
-    access_token_key: credentials.accessTokenKey, // from your User (oauth_token)
-    access_token_secret: credentials.accessTokenSecret, // from your User (oauth_token_secret)
+    consumer_key: credentials.consumer_key, // from Twitter.
+    consumer_secret: credentials.consumer_secret, // from Twitter.
+    access_token_key: credentials.access_token_key, // from your User (oauth_token)
+    access_token_secret: credentials.access_token_secret, // from your User (oauth_token_secret)
   });
   try {
     if (process.env.DRY_RUN) {
