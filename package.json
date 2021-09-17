@@ -2,9 +2,10 @@
   "name": "cardimom",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/launcher.js",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage=true"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage=true",
+    "start": "node ./src/launcher.js"
   },
   "repository": {
     "type": "git",
