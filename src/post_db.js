@@ -13,7 +13,8 @@ export function poolStart(databaseURL){
     connectionString: databaseURL, // format: postgres://user:password@host:5432/database [https://node-postgres.com/api/client]
     connectionTimeoutMillis: 10000, // [https://node-postgres.com/api/pool]
     idleTimeoutMillis: 60000,
-    max: 2
+    max: 2,
+    ssl: { rejectUnauthorized: false }
   });
 } 
 
