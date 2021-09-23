@@ -26,11 +26,10 @@ export async function parse(xml) {
 async function parseRSS(parsed) {
   let listOfItems = parsed.window.document.getElementsByTagName("item");
   let lastUpdated = await db.lastUpdated();
-  //for the first time, the database will be empty and lastUpdated will be === null
-  if(lastUpdated === null){
+  //for the first time, the database will be empty and lastUpdated will be == null
+  if(!lastUpdated){
     //new Date() creates a new date object; 
     //Date.parse() returns date object in milli seconds
-    //ToDo:lastUpdated = Date.parse(new Date());
     lastUpdated = 1609439400000;// Date: Jan 1, 2021
   }
   let allPosts = [];
@@ -67,8 +66,7 @@ async function parseRSS(parsed) {
 async function parseAtom(parsed) {
   let listOfEntries = parsed.window.document.getElementsByTagName("entry");
   let lastUpdated = await db.lastUpdated();
-  if(lastUpdated === null){
-    //ToDo:lastUpdated = Date.parse(new Date());
+  if(!lastUpdated){
     lastUpdated = 1609439400000;// Date: Jan 1, 2021
   }
   let allPosts = [];
@@ -81,7 +79,7 @@ async function parseAtom(parsed) {
     }
     let dateStd = convertDate(date);
     if(!dateStd|| typeof dateStd !== "number" || dateStd < lastUpdated){
-      dateStd = false;
+      dateStd = false; 
     }
     let title = getElementText(listOfEntries[i], "title");
     if(!title || typeof title !== "string"){
@@ -125,7 +123,6 @@ function confirmLink(str){
     let urlObject = new URL(str);
     let protocol = urlObject.protocol;
     if(protocol != "https:" && protocol != "http:"){
-      //console.log("protocol not supported:" + str);
       return false;
     }
     let origin = urlObject.origin;

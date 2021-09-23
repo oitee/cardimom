@@ -62,7 +62,17 @@ let config =
       excludes_all: ["Xplenty"],
     },
     twitter_username: "@testHeroku",
-  }
+  },
+  {
+    link: "https://mourjo.me/blog/feed.xml",
+    filter: {
+        includes_any: [
+            "engineering", "computer"
+        ],
+        excludes_all: ["Load Shedding in Clojure", "Rastapopoulos"]
+    },
+    twitter_username: "@mourjo_sen"
+}
 ];
 
 // ==========================================================
