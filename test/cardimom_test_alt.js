@@ -8,7 +8,8 @@ import * as assert from "assert";
 const { Client } = pg;
 let client = new Client({
   connectionString:
-    "postgres://postgres:test123@localhost:5432/cardimom_test_alt",
+    // "postgres://postgres:test123@localhost:5432/cardimom_test_alt",
+    `postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`,
 });
 
 async function deleteAll() {
@@ -103,7 +104,9 @@ test("test after deleting most recent post", async () =>{
 
 beforeAll(async () => {
   await client.connect();
-  db.poolStart("postgres://postgres:test123@localhost:5432/cardimom_test_alt");
+  db.poolStart(`postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`
+    // "postgres://postgres:test123@localhost:5432/cardimom_test_alt"
+    );
   await deleteAll();
 });
 
