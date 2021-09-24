@@ -22,8 +22,8 @@ import pg from "pg";
 const { Client } = pg;
 
 const client = new Client({
-  //connectionString: "postgres://postgres:test123@localhost:5432/cardimom_test",
-  connectionString: `postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`,
+  connectionString: "postgres://postgres:test123@localhost:5432/cardimom_test",
+  // connectionString: `postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`,
 });
 
 async function deleteAllPosts() {
@@ -36,7 +36,8 @@ async function deleteAllPosts() {
 
 async function runner(config) {
   let listOfBlogs = config_reader.reader(config);
-  let listOfPosts = await Promise.all(listOfBlogs.map(fetcher.findPosts));
+  let lastUpdated = await db.lastUpdated();
+  let listOfPosts = await Promise.all(listOfBlogs.map(blog => fetcher.findPosts(lastUpdated, blog)));
   listOfPosts = listOfPosts.flatMap((post) => post);
 
   listOfPosts = await db
@@ -123,8 +124,8 @@ test("duplicated config-- idempotent run", async () => {
 beforeAll(async () => {
   await client.connect();
   db.poolStart(
-    // "postgres://postgres:test123@localhost:5432/cardimom_test"
-    `postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`
+    "postgres://postgres:test123@localhost:5432/cardimom_test"
+    //`postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`
   );
 });
 

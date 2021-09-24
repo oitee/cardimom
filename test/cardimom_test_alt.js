@@ -8,8 +8,8 @@ import * as assert from "assert";
 const { Client } = pg;
 let client = new Client({
   connectionString:
-    // "postgres://postgres:test123@localhost:5432/cardimom_test_alt",
-    `postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`,
+    "postgres://postgres:test123@localhost:5432/cardimom_test_alt",
+    // `postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`,
 });
 
 async function deleteAll() {
@@ -35,7 +35,8 @@ async function deleteLatestPost(){
 
 async function runner(config) {
   let listOfBlogs = config_reader.reader(config);
-  let listOfPosts = await Promise.all(listOfBlogs.map(fetcher.findPosts));
+  let lastUpdated = await db.lastUpdated();
+  let listOfPosts = await Promise.all(listOfBlogs.map(blog => fetcher.findPosts(lastUpdated, blog)));
   listOfPosts = listOfPosts.flatMap((post) => post);
 
   let newPosts = await db.selectNewPosts(listOfPosts).then(db.addNewPosts);
@@ -104,9 +105,7 @@ test("test after deleting most recent post", async () =>{
 
 beforeAll(async () => {
   await client.connect();
-  db.poolStart(`postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`
-    // "postgres://postgres:test123@localhost:5432/cardimom_test_alt"
-    );
+  db.poolStart("postgres://postgres:test123@localhost:5432/cardimom_test_alt");
   await deleteAll();
 });
 

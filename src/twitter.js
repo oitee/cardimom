@@ -1,7 +1,8 @@
 import Twitter from "twitter-lite";
+import * as utilities from "./utilities.js"; 
 
 export async function publishTweets(credentials, posts) {
-  let listOfTweets = keep(posts, (post) => {
+  let listOfTweets = utilities.keep(posts, (post) => {
     let tweet = `New blog post by ${post.twitter_username}: ${post.title} ${post.link}`;
     if (tweet.length > 280) {
       tweet = `${post.twitter_username} posted ${post.link}`;
@@ -56,13 +57,4 @@ async function tweet(credentials, tweetPost) {
   }
 }
 
-function keep(list, mapper) {
-  let reducer = (acc, entry) => {
-    let returnValue = mapper(entry);
-    if (returnValue) {
-      acc.push(returnValue);
-    }
-    return acc;
-  };
-  return list.reduce(reducer, []);
-}
+

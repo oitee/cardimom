@@ -7,13 +7,13 @@ import * as filter from "./filter.js"
  * @param {object} blog
  * @returns {[object]}
  */
-export async function findPosts(blog){
+export async function findPosts(lastUpdated, blog){
   let listOfPosts = [];
   let url = blog.link;
   let feedText = await fetcher(url);
   if (feedText !== undefined) {
     try {
-       listOfPosts = await feedParser.parse(feedText);
+       listOfPosts = await feedParser.parse(lastUpdated, feedText);
        listOfPosts.map(post => {
          post.twitter_username = blog.twitter_username;
          post.filter = blog.filter;

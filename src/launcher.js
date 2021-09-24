@@ -19,7 +19,8 @@ db.poolStart(process.env.DATABASE_URL);
 async function launch() {
   console.log("Starting to read blogs");
   try {
-    let listOfPosts = await Promise.all(listOfBlogs.map(fetcher.findPosts));
+    let lastUpdated = await db.lastUpdated();
+    let listOfPosts = await Promise.all(listOfBlogs.map(blog=> fetcher.findPosts(lastUpdated, blog)));
     listOfPosts = listOfPosts.flatMap((post) => post);
 
     db.selectNewPosts(listOfPosts)
