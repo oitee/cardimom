@@ -18,5 +18,15 @@
             "excludes_all": ["Load Shedding in Clojure", "Rastapopoulos"]
         },
         "twitter_username": "@mourjo_sen"
+    },
+    {
+        "link": "https://devblogs.microsoft.com/landingpage/",
+        "filter": {
+            "includes_any": [
+                "javascript"
+            ],
+            "excludes_all": []
+        },
+        "twitter_username": "@Microsoft"
     }
 ]
