@@ -31,5 +31,13 @@
             ]
         },
         "twitter_username": "@mourjo_sen"
+    },
+    {
+        "link": "https://devblogs.microsoft.com/landingpage/",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@Microsoft"
     }
 ]
