@@ -22,9 +22,7 @@
     {
         "link": "https://devblogs.microsoft.com/landingpage/",
         "filter": {
-            "includes_any": [
-                "javascript"
-            ],
+            "includes_any": [],
             "excludes_all": []
         },
         "twitter_username": "@Microsoft"
