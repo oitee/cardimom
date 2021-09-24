@@ -1,11 +1,20 @@
 [
     {
-        "link": "https://otee.dev/feed.xml",
+        "link": "https://hacks.mozilla.org/feed/",
         "filter": {
             "includes_any": [
+                "javascript",
+                "typescript"
             ],
-            "excludes_all": [
-            ]
+            "excludes_all": []
+        },
+        "twitter_username": "@mozilla"
+    },
+    {
+        "link": "https://otee.dev/feed.xml",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
         },
         "twitter_username": "@oteecodes"
     },
@@ -13,9 +22,13 @@
         "link": "https://mourjo.me/blog/feed.xml",
         "filter": {
             "includes_any": [
-                "engineering", "computer"
+                "engineering",
+                "computer"
             ],
-            "excludes_all": ["Load Shedding in Clojure", "Rastapopoulos"]
+            "excludes_all": [
+                "Load Shedding in Clojure",
+                "Rastapopoulos"
+            ]
         },
         "twitter_username": "@mourjo_sen"
     }
