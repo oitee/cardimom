@@ -35,9 +35,77 @@
     {
         "link": "https://devblogs.microsoft.com/landingpage/",
         "filter": {
-            "includes_any": [],
+            "includes_any": [
+                "JavaScript",
+                "Lisp",
+                "typescript"
+            ],
             "excludes_all": []
         },
         "twitter_username": "@Microsoft"
+    },
+    {
+        "link": "https://medium.com/feed/@mourjo_sen",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@mourjo_sen"
+    },
+    {
+        "link": "https://engineering.razorpay.com/feed",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@RazorpayEngg"
+    },
+    {
+        "link": "https://medium.com/feed/helpshift-engineering",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@HelpshiftEng"
+    },
+    {
+        "link": "https://netflixtechblog.com/feed",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@NetflixEng"
+    },
+    {
+        "link": "https://eng.uber.com/feed/",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@UberEng"
+    },
+    {
+        "link": "https://blog.cloudflare.com/tag/engineering/rss/",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@Cloudflare"
+    },
+    {
+        "link": "https://decentralizedthoughts.github.io/feed",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@ittaia"
+    },
+    {
+        "link": "https://www.technologyreview.com/topic/computing/feed",
+        "filter": {
+            "includes_any": [],
+            "excludes_all": []
+        },
+        "twitter_username": "@techreview"
     }
 ]

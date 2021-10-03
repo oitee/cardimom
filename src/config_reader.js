@@ -7,7 +7,7 @@
 export function reader(config) {
   try {
     let setOfLinks = new Set();
-    
+
     let finalList = [];
     if (Array.isArray(config)) {
       for (let blog of config) {
@@ -17,20 +17,36 @@ export function reader(config) {
           blog.hasOwnProperty("filter") &&
           blog.hasOwnProperty("twitter_username")
         ) {
-          if (typeof blog.link == "string" && blog.link.length != 0 && !(setOfLinks.has(blog.link))) {
+          if (
+            typeof blog.link == "string" &&
+            blog.link.length != 0 &&
+            !setOfLinks.has(blog.link)
+          ) {
             currentBlog.link = blog.link;
             setOfLinks.add(blog.link);
+          } else {
+            console.warn(
+              `Skipping blog because link is incorrectly configured: ${JSON.stringify(
+                blog
+              )}`
+            );
           }
           if (typeof blog.filter == "object") {
             let keysFilter = Object.keys(blog.filter);
             if (
               keysFilter.length == 2 &&
               blog.filter.hasOwnProperty("includes_any") &&
-              blog.filter.hasOwnProperty("excludes_all") && 
+              blog.filter.hasOwnProperty("excludes_all") &&
               Array.isArray(blog.filter.includes_any) &&
               Array.isArray(blog.filter.excludes_all)
             ) {
               currentBlog.filter = blog.filter;
+            } else {
+              console.warn(
+                `Skipping blog because filter is incorrectly configured: ${JSON.stringify(
+                  blog
+                )}`
+              );
             }
           }
           if (
@@ -39,6 +55,12 @@ export function reader(config) {
           ) {
             currentBlog.twitter_username = blog.twitter_username;
           }
+        } else {
+          console.warn(
+            `Skipping blog due to invalid configuration: ${JSON.stringify(
+              blog
+            )}`
+          );
         }
         let keysCurrentBlog = Object.keys(currentBlog);
         if (keysCurrentBlog.length == 3) {
@@ -52,6 +74,3 @@ export function reader(config) {
     console.error(err);
   }
 }
-
-
-
