@@ -24,6 +24,7 @@ jobs:
         # Provide the password for postgres
         env:
           POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: cardimom_test
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
@@ -54,4 +55,5 @@ jobs:
         # The default PostgreSQL port
         TEST_POSTGRES_PORT: 5432
         TEST_POSTGRES_PASSWORD: postgres
+        TEST_POSTGRES_DB: cardimom_test
         
