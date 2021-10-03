@@ -2,6 +2,7 @@ import * as config_reader from "../src/config_reader.js";
 import * as fetcher from "../src/fetcher.js";
 import * as db from "../src/post_db.js";
 import * as assert from "assert";
+import connectionString from "./pg_utils.js";
 
 /*
 To run this test, the database on local host needs to be created as follows:
@@ -21,9 +22,9 @@ create table if not exists posts (
 import pg from "pg";
 const { Client } = pg;
 
+
 const client = new Client({
-  connectionString: "postgres://postgres:test123@localhost:5432/cardimom_test",
-  // connectionString: `postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`,
+  connectionString: connectionString,
 });
 
 async function deleteAllPosts() {
@@ -124,7 +125,7 @@ test("duplicated config-- idempotent run", async () => {
 beforeAll(async () => {
   await client.connect();
   db.poolStart(
-    "postgres://postgres:test123@localhost:5432/cardimom_test"
+    connectionString
     //`postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`
   );
 });

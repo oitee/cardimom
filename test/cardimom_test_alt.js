@@ -3,13 +3,12 @@ import * as config_reader from "../src/config_reader.js";
 import * as db from "../src/post_db.js";
 import pg from "pg";
 import * as assert from "assert";
-
+import connectionString from "./pg_utils.js";
 
 const { Client } = pg;
 let client = new Client({
   connectionString:
-    "postgres://postgres:test123@localhost:5432/cardimom_test_alt",
-    // `postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`,
+    connectionString
 });
 
 async function deleteAll() {
@@ -105,7 +104,7 @@ test("test after deleting most recent post", async () =>{
 
 beforeAll(async () => {
   await client.connect();
-  db.poolStart("postgres://postgres:test123@localhost:5432/cardimom_test_alt");
+  db.poolStart(connectionString);
   await deleteAll();
 });
 
