@@ -5,7 +5,8 @@
   "main": "./src/launcher.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage=true -i",
-    "start": "node ./src/launcher.js"
+    "start": "node ./src/launcher.js",
+    "local_test": "TEST_POSTGRES_HOST=localhost TEST_POSTGRES_PORT=5432 TEST_POSTGRES_PASSWORD=test123 TEST_POSTGRES_DB=cardimom_test npm test"
   },
   "repository": {
     "type": "git",

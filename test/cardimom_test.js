@@ -2,7 +2,7 @@ import * as config_reader from "../src/config_reader.js";
 import * as fetcher from "../src/fetcher.js";
 import * as db from "../src/post_db.js";
 import * as assert from "assert";
-import connectionString from "./pg_utils.js";
+import * as pgUtils from "./pg_utils.js";
 
 /*
 To run this test, the database on local host needs to be created as follows:
@@ -24,7 +24,7 @@ const { Client } = pg;
 
 
 const client = new Client({
-  connectionString: connectionString,
+  connectionString: pgUtils.connectionString,
 });
 
 async function deleteAllPosts() {
@@ -124,8 +124,9 @@ test("duplicated config-- idempotent run", async () => {
 
 beforeAll(async () => {
   await client.connect();
+  await pgUtils.createPostsTable();
   db.poolStart(
-    connectionString
+    pgUtils.connectionString
     //`postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`
   );
 });

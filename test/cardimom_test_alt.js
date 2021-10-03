@@ -3,12 +3,12 @@ import * as config_reader from "../src/config_reader.js";
 import * as db from "../src/post_db.js";
 import pg from "pg";
 import * as assert from "assert";
-import connectionString from "./pg_utils.js";
+import * as pgUtils from "./pg_utils.js";
 
 const { Client } = pg;
 let client = new Client({
   connectionString:
-    connectionString
+    pgUtils.connectionString
 });
 
 async function deleteAll() {
@@ -104,7 +104,8 @@ test("test after deleting most recent post", async () =>{
 
 beforeAll(async () => {
   await client.connect();
-  db.poolStart(connectionString);
+  await pgUtils.createPostsTable();
+  db.poolStart(pgUtils.connectionString);
   await deleteAll();
 });
 
