@@ -126,9 +126,7 @@ beforeAll(async () => {
   await client.connect();
   await pgUtils.createPostsTable();
   db.poolStart(
-    pgUtils.connectionString
-    //`postgres://postgres:postgres@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/postgres`
-  );
+    pgUtils.connectionString, false);
 });
 
 afterAll(async () => {

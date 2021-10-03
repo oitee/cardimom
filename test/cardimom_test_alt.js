@@ -105,7 +105,7 @@ test("test after deleting most recent post", async () =>{
 beforeAll(async () => {
   await client.connect();
   await pgUtils.createPostsTable();
-  db.poolStart(pgUtils.connectionString);
+  db.poolStart(pgUtils.connectionString, false);
   await deleteAll();
 });
 
