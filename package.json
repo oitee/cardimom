@@ -6,7 +6,8 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage=true -i",
     "start": "node ./src/launcher.js",
-    "local_test": "TEST_POSTGRES_HOST=localhost TEST_POSTGRES_PORT=5432 TEST_POSTGRES_PASSWORD=test123 TEST_POSTGRES_DB=cardimom_test npm test"
+    "local_test": "TEST_POSTGRES_HOST=localhost TEST_POSTGRES_PORT=5432 TEST_POSTGRES_PASSWORD=test123 TEST_POSTGRES_DB=cardimom_test npm test",
+    "trial_run" : "node -e 'import(\"./src/utilities.js\").then(utils => utils.trialRun());'"
   },
   "repository": {
     "type": "git",

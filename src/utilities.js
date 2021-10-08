@@ -13,7 +13,7 @@ const sampleConfig = [
 ];
 const listOfBlogs = config_reader.reader(sampleConfig);
 
-async function trialRun() {
+export async function trialRun() {
   try {
     let lastUpdated = null;
     let listOfPosts = await Promise.all(
