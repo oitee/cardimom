@@ -1,7 +1,8 @@
 import { JSDOM } from "jsdom";
+import * as utils from "./utilities.js";
 
 /**
- * Parses an xml feed passed to it and returns an array of objects representing the requisite properties of each post 
+ * Parses an xml feed passed to it and returns an array of objects representing the requisite properties of each post
  * @param {string} xml
  * @returns {[object]}
  */
@@ -23,81 +24,92 @@ export async function parse(lastUpdated, xml) {
 }
 
 async function parseRSS(lastUpdated, parsed) {
+  const DATE_TAGS_RSS = ["pubDate"];
+  const LINK_TAGS_RSS = ["link"];
+  const TITLE_TAGS_RSS = ["title"];
+  const CONTENT_TAGS_RSS = ["description"];
+
   let listOfItems = parsed.window.document.getElementsByTagName("item");
   //for the first time, the database will be empty and lastUpdated will be == null
-  if(!lastUpdated){
-    //new Date() creates a new date object; 
+  if (!lastUpdated) {
+    //new Date() creates a new date object;
     //Date.parse() returns date object in milli seconds
-    lastUpdated = 1609439400000;// Date: Jan 1, 2021
+    lastUpdated = 1609439400000; // Date: Jan 1, 2021
   }
   let allPosts = [];
   for (let i = 0; i < listOfItems.length; i++) {
+    const tagFinder = (tag) => getElementText(listOfItems[i], tag);
+    const extractorFn = (tags) => utils.some(tags, tagFinder);
+
     let currentPost = {};
-    
-    let date = getElementText(listOfItems[i], "pubDate");
+    let date = extractorFn(DATE_TAGS_RSS);
     let dateStd = convertDate(date);
-    if(!dateStd || typeof dateStd !== "number" || dateStd < lastUpdated){
+    if (!dateStd || typeof dateStd !== "number" || dateStd < lastUpdated) {
       dateStd = false;
     }
-    let title = getElementText(listOfItems[i], "title");
-    if(!title || typeof title !== "string"){
+    let title = extractorFn(TITLE_TAGS_RSS);
+    if (!title || typeof title !== "string") {
       title = false;
     }
-    let content = getElementText(listOfItems[i], "description");
-    if(!content || typeof content !== "string"){
+
+    let content = extractorFn(CONTENT_TAGS_RSS);
+    if (!content || typeof content !== "string") {
       content = false;
     }
-    let link = getElementText(listOfItems[i], "link");
+    let link = extractorFn(LINK_TAGS_RSS);
     let linkStd = confirmLink(link);
-    if(linkStd && content && title && dateStd){
+    if (linkStd && content && title && dateStd) {
       currentPost.title = title;
       currentPost.date = dateStd;
       currentPost.content = content;
       currentPost.link = linkStd;
       allPosts.push(currentPost);
     }
-      
   }
   return allPosts;
 }
 
 async function parseAtom(lastUpdated, parsed) {
+  const DATE_TAGS_ATOM = ["updated", "published"];
+  const LINK_TAGS_ATOM = ["id"];
+  const TITLE_TAGS_ATOM = ["title"];
+  const CONTENT_TAGS_ATOM = ["content", "summary"];
+
   let listOfEntries = parsed.window.document.getElementsByTagName("entry");
-  if(!lastUpdated){
-    lastUpdated = 1609439400000;// Date: Jan 1, 2021
+  if (!lastUpdated) {
+    lastUpdated = 1609439400000; // Date: Jan 1, 2021
   }
   let allPosts = [];
   for (let i = 0; i < listOfEntries.length; i++) {
+    const tagFinder = (tag) => getElementText(listOfEntries[i], tag);
+    const extractorFn = (tags) => utils.some(tags, tagFinder);
     let currentPost = {};
-    
-    let date = getElementText(listOfEntries[i], "published");
-    if (!date) {
-      date = getElementText(listOfEntries[i], "updated");
-    }
+
+    let date = extractorFn(DATE_TAGS_ATOM);
     let dateStd = convertDate(date);
-    if(!dateStd|| typeof dateStd !== "number" || dateStd < lastUpdated){
-      dateStd = false; 
+    if (!dateStd || typeof dateStd !== "number" || dateStd < lastUpdated) {
+      dateStd = false;
     }
-    let title = getElementText(listOfEntries[i], "title");
-    if(!title || typeof title !== "string"){
+
+    let title = extractorFn(TITLE_TAGS_ATOM);
+    if (!title || typeof title !== "string") {
       title = false;
     }
-    let content = getElementText(listOfEntries[i], "content");
-    if (!content) {
-      content = getElementText(listOfEntries[i], "summary");
-    }
-    if(!content|| typeof content !== "string"){
+
+    let content = extractorFn(CONTENT_TAGS_ATOM);
+    if (!content || typeof content !== "string") {
       content = false;
     }
-      let link = getElementText(listOfEntries[i], "id");
-      let linkStd = confirmLink(link);
-      if(linkStd && title && content && dateStd){
-        currentPost.title = title;
-        currentPost.date = dateStd;
-        currentPost.content = content;
-        currentPost.link = linkStd;    
-        allPosts.push(currentPost);
-      }
+
+    let link = extractorFn(LINK_TAGS_ATOM);
+    let linkStd = confirmLink(link);
+    if (linkStd && title && content && dateStd) {
+      currentPost.title = title;
+      currentPost.date = dateStd;
+      currentPost.content = content;
+      currentPost.link = linkStd;
+      allPosts.push(currentPost);
+    }
   }
   return allPosts;
 }
@@ -109,27 +121,24 @@ function getElementText(listOfElements, tag) {
   return;
 }
 
-function convertDate(str){
+function convertDate(str) {
   let dateMilli = Date.parse(str);
-  return dateMilli;  
+  return dateMilli;
 }
 
-function confirmLink(str){
+function confirmLink(str) {
   let linkStd;
-  try{
+  try {
     let urlObject = new URL(str);
     let protocol = urlObject.protocol;
-    if(protocol != "https:" && protocol != "http:"){
+    if (protocol != "https:" && protocol != "http:") {
       return false;
     }
     let origin = urlObject.origin;
     let path = urlObject.pathname;
     linkStd = origin + path;
-  }
-  catch(e){
+  } catch (e) {
     return false;
   }
   return linkStd;
 }
-
-

@@ -22,7 +22,6 @@ create table if not exists posts (
 import pg from "pg";
 const { Client } = pg;
 
-
 const client = new Client({
   connectionString: pgUtils.connectionString,
 });
@@ -38,12 +37,12 @@ async function deleteAllPosts() {
 async function runner(config) {
   let listOfBlogs = config_reader.reader(config);
   let lastUpdated = await db.lastUpdated();
-  let listOfPosts = await Promise.all(listOfBlogs.map(blog => fetcher.findPosts(lastUpdated, blog)));
+  let listOfPosts = await Promise.all(
+    listOfBlogs.map((blog) => fetcher.findPosts(lastUpdated, blog))
+  );
   listOfPosts = listOfPosts.flatMap((post) => post);
 
-  listOfPosts = await db
-    .selectNewPosts(listOfPosts)
-    .then(db.addNewPosts);
+  listOfPosts = await db.selectNewPosts(listOfPosts).then(db.addNewPosts);
   return createMockTweets(listOfPosts);
 }
 
@@ -103,7 +102,7 @@ config = [
       excludes_all: ["LISP"],
     },
     twitter_username: "@oteecodes",
-  },
+  }
 ];
 
 test("duplicated config-- empty database test", async () => {
@@ -125,8 +124,7 @@ test("duplicated config-- idempotent run", async () => {
 beforeAll(async () => {
   await client.connect();
   await pgUtils.createPostsTable();
-  db.poolStart(
-    pgUtils.connectionString, false);
+  db.poolStart(pgUtils.connectionString, false);
 });
 
 afterAll(async () => {

@@ -67,7 +67,7 @@ export async function addNewPosts(postList) {
     for (let post of postList) {
       await client.query(
         "insert into posts values($1, $2, current_timestamp, to_timestamp($3))",
-        [post.link, post.twitter_username, post.date / 1000] //ToDo: check if this can be done with one insert query
+        [post.link, post.twitter_username, post.date / 1000]
       );
     }
   } catch (e) {

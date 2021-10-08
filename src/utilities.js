@@ -44,9 +44,9 @@ export function mockTweets(posts) {
 
 export function keep(list, mapper) {
   let reducer = (acc, entry) => {
-    let returnValue = mapper(entry);
-    if (returnValue) {
-      acc.push(returnValue);
+    let result = mapper(entry);
+    if (result) {
+      acc.push(result);
     }
     return acc;
   };
@@ -54,3 +54,13 @@ export function keep(list, mapper) {
 }
 
 // await trialRun();
+
+export function some(list, matcher) {
+  for (let i = 0; i < list.length; i++) {
+    let result = matcher(list[i]);
+    if (result) {
+      return result;
+    }
+  }
+  return null;
+}
