@@ -6,11 +6,44 @@ let sampleConfig = [
   {
     link: "https://hacks.mozilla.org/feed/",
     filter: {
-      includes_any: ["javascript", "typescript"],
+      includes_any: [],
       excludes_all: [],
     },
-    twitter_username: "@Mozilla",
+    twitter_username: "@mozilla",
   },
+  {
+    link: "https://otee.dev/feed.xml",
+    filter: {
+      includes_any: [],
+      excludes_all: [],
+    },
+    twitter_username: "@oteecodes",
+  },
+  {
+    link: "https://engineering.cerner.com/index.xml",
+    filter: {
+      includes_any: [],
+      excludes_all: [],
+    },
+    twitter_username: "@CernerEng",
+  },
+  {
+    link: "https://www.cloudbees.com/blog.xml",
+    filter: {
+      includes_any: [],
+      excludes_all: [],
+    },
+    twitter_username: "@CloudBees",
+  },
+
+  // {
+  //   link: "",
+  //   filter: {
+  //     includes_any: [],
+  //     excludes_all: [],
+  //   },
+  //   twitter_username: "",
+  // },
 ];
 
 if (process.env.CONFIG_FILE_PATH) {

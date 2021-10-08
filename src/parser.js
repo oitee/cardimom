@@ -27,7 +27,7 @@ async function parseRSS(lastUpdated, parsed) {
   const DATE_TAGS_RSS = ["pubDate"];
   const LINK_TAGS_RSS = ["link"];
   const TITLE_TAGS_RSS = ["title"];
-  const CONTENT_TAGS_RSS = ["description"];
+  const CONTENT_TAGS_RSS = ["description", "content:encoded"];
 
   let listOfItems = parsed.window.document.getElementsByTagName("item");
   //for the first time, the database will be empty and lastUpdated will be == null
