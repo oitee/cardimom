@@ -1,7 +1,8 @@
 import * as fetcher from "./fetcher.js";
 import * as config_reader from "./config_reader.js";
+import { readFileSync } from "fs";
 
-const sampleConfig = [
+let sampleConfig = [
   {
     link: "https://hacks.mozilla.org/feed/",
     filter: {
@@ -11,6 +12,14 @@ const sampleConfig = [
     twitter_username: "@Mozilla",
   },
 ];
+
+if (process.env.CONFIG_FILE_PATH) {
+  console.log(`Reading config from file: ${process.env.CONFIG_FILE_PATH}`);
+  sampleConfig = JSON.parse(readFileSync(process.env.CONFIG_FILE_PATH, "utf8"));
+} else {
+  console.log(`Reading sample config`);
+}
+
 const listOfBlogs = config_reader.reader(sampleConfig);
 
 export async function trialRun() {

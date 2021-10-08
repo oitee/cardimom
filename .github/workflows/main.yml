@@ -46,6 +46,8 @@ jobs:
     - run: npm ci
     - name: Unit Test
       run: npm run trial_run
+      env:
+        CONFIG_FILE_PATH: blog_spec.json
     - name: Integration Test (connecting to PG)
       # Runs a script that creates a PostgreSQL table, populates
       # the table with data, and then retrieves the data.
