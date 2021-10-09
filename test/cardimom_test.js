@@ -38,7 +38,13 @@ async function runner(config) {
   let listOfBlogs = config_reader.reader(config);
   let lastUpdated = await db.lastUpdated();
   let listOfPosts = await Promise.all(
-    listOfBlogs.map((blog) => fetcher.findPosts(lastUpdated, blog))
+    listOfBlogs.map((blog) => {
+      let author = blog.twitter_username;
+      if (!lastUpdated[author]) {
+        lastUpdated[author] = lastUpdated["__overall_max"];
+      }
+      return fetcher.findPosts(lastUpdated[author], blog);
+    })
   );
   listOfPosts = listOfPosts.flatMap((post) => post);
 
@@ -102,7 +108,7 @@ config = [
       excludes_all: ["LISP"],
     },
     twitter_username: "@oteecodes",
-  }
+  },
 ];
 
 test("duplicated config-- empty database test", async () => {

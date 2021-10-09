@@ -35,7 +35,15 @@ async function deleteLatestPost(){
 async function runner(config) {
   let listOfBlogs = config_reader.reader(config);
   let lastUpdated = await db.lastUpdated();
-  let listOfPosts = await Promise.all(listOfBlogs.map(blog => fetcher.findPosts(lastUpdated, blog)));
+  let listOfPosts = await Promise.all(
+    listOfBlogs.map((blog) => {
+      let author = blog.twitter_username;
+      if (!lastUpdated[author]) {
+        lastUpdated[author] = lastUpdated["__overall_max"];
+      }
+      return fetcher.findPosts(lastUpdated[author], blog);
+    })
+  );
   listOfPosts = listOfPosts.flatMap((post) => post);
 
   let newPosts = await db.selectNewPosts(listOfPosts).then(db.addNewPosts);

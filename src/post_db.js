@@ -12,7 +12,7 @@ export function poolStart(databaseURL, sslSupported = true) {
     connectionString: databaseURL, // format: postgres://user:password@host:5432/database [https://node-postgres.com/api/client]
     connectionTimeoutMillis: 10000, // [https://node-postgres.com/api/pool]
     idleTimeoutMillis: 60000,
-    max: 2
+    max: 2,
   };
 
   if (sslSupported) {
@@ -85,11 +85,18 @@ export async function lastUpdated() {
   const client = await pool.connect();
   let res;
   try {
-    res = await client.query("select max(posted_at) from posts");
+    res = await client.query(
+      "select author, max(posted_at) as max_posted_at from posts group by author"
+    );
   } catch (e) {
     console.error(e);
   } finally {
     client.release();
   }
-  return Date.parse(res.rows[0].max);
+  let authorTimeStamps = res.rows.reduce((acc, row) => {
+    acc[row.author] = Date.parse(row.max_posted_at);
+    acc['__overall_max'] = Math.max(acc[row.author], acc['__overall_max']);
+    return acc;
+  }, {'__overall_max': 1609439400000});
+  return authorTimeStamps;
 }
