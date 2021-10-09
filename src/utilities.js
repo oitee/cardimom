@@ -107,5 +107,8 @@ export function some(list, matcher) {
 }
 
 export function removeAll(inputString, keywords) {
+  if(!inputString){
+    return inputString;
+  }
   return keywords.reduce((acc, key) => acc.replaceAll(key, ""), inputString);
 }
