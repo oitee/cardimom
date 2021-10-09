@@ -95,7 +95,6 @@ export function keep(list, mapper) {
   return list.reduce(reducer, []);
 }
 
-// await trialRun();
 
 export function some(list, matcher) {
   for (let i = 0; i < list.length; i++) {
@@ -105,4 +104,8 @@ export function some(list, matcher) {
     }
   }
   return null;
+}
+
+export function removeAll(inputString, keywords) {
+  return keywords.reduce((acc, key) => acc.replaceAll(key, ""), inputString);
 }
