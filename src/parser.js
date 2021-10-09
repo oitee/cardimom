@@ -76,7 +76,7 @@ async function parseAtom(lastUpdated, parsed) {
   const LINK_TAGS_ATOM = ["id"];
   const TITLE_TAGS_ATOM = ["title"];
   const CONTENT_TAGS_ATOM = ["content", "summary"];
-  const ENCODED_TAGS = ["<![CDATA[", "]]>"];
+  const ENCODED_TAGS = [/\<![CDATA[/g, /]]\>/g];// regular version of strings ['<![CDATA[', ']]>']
 
   let listOfEntries = parsed.window.document.getElementsByTagName("entry");
   if (!lastUpdated) {
