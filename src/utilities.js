@@ -35,7 +35,6 @@ let sampleConfig = [
     },
     twitter_username: "@CloudBees",
   },
-
   // {
   //   link: "",
   //   filter: {

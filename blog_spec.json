@@ -679,5 +679,51 @@
             "excludes_all": []
         },
         "twitter_username": "@HubSpotDev"
+    },
+    {
+        "link": "https://www.hashicorp.com/blog/feed.xml",
+        "filter": {
+            "includes_any": [
+                "javascript",
+                "typescript"
+            ],
+            "excludes_all": []
+        },
+        "twitter_username": "@hashicorp"
+    },
+    {
+        "link": "https://hashrocket.com/blog/posts.rss",
+        "filter": {
+            "includes_any": [
+                "javascript",
+                "typescript"
+            ],
+            "excludes_all": []
+        },
+        "twitter_username": "@hashrocket"
+    },
+    {
+        "link": "https://engineering.hashnode.com/rss.xml",
+        "filter": {
+            "includes_any": [
+                "javascript",
+                "typescript"
+            ],
+            "excludes_all": [
+                "announcement"
+            ]
+        },
+        "twitter_username": "@hashnode"
+    },
+    {
+        "link": "https://medium.com/feed/engineering-housing",
+        "filter": {
+            "includes_any": [
+                "javascript",
+                "typescript"
+            ],
+            "excludes_all": []
+        },
+        "twitter_username": "@HousingEngg"
     }
 ]
