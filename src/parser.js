@@ -28,7 +28,7 @@ async function parseRSS(lastUpdated, parsed) {
   const LINK_TAGS_RSS = ["link"];
   const TITLE_TAGS_RSS = ["title"];
   const CONTENT_TAGS_RSS = ["description", "content:encoded"];
-  const ENCODED_TAGS = [/\<![CDATA[/g, /]]\>/g];
+  const ENCODED_TAGS = [/<!\[CDATA\[/g, /\]\]\>/g];
 
   let listOfItems = parsed.window.document.getElementsByTagName("item");
   //for the first time, the database will be empty and lastUpdated will be == null
@@ -76,7 +76,7 @@ async function parseAtom(lastUpdated, parsed) {
   const LINK_TAGS_ATOM = ["id"];
   const TITLE_TAGS_ATOM = ["title"];
   const CONTENT_TAGS_ATOM = ["content", "summary"];
-  const ENCODED_TAGS = [/\<![CDATA[/g, /]]\>/g];// regular version of strings ['<![CDATA[', ']]>']
+  const ENCODED_TAGS = [/<!\[CDATA\[/g, /\]\]\>/g];// regular version of strings ['<![CDATA[', ']]>']
 
   let listOfEntries = parsed.window.document.getElementsByTagName("entry");
   if (!lastUpdated) {
