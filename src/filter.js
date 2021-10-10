@@ -15,7 +15,10 @@ export function select(listOfPosts, includes, excludes) {
 }
 
 function satisfies(post, includes, excludes) {
-  let lowerCaseContent = post.content.toLowerCase();
+  let title = post.title.toLowerCase();
+  let content = post.content.toLowerCase();
+  let lowerCaseContent = title + content;
+
   return (
     (includes.length == 0 || includesAny(lowerCaseContent, includes)) &&
     (excludes.length == 0 || !includesAny(lowerCaseContent, excludes))
