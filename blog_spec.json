@@ -3,8 +3,10 @@
         "link": "https://hacks.mozilla.org/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -23,7 +25,11 @@
         "filter": {
             "includes_any": [
                 "engineering",
-                "computer"
+                "computer",
+                "JavaScript",
+                "TypeScript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": [
                 "Load Shedding in Clojure",
@@ -38,7 +44,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -50,7 +58,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -62,7 +72,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -74,7 +86,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -86,7 +100,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -98,7 +114,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -110,7 +128,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -122,7 +142,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -134,7 +156,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -146,7 +170,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -158,7 +184,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -170,7 +198,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -182,7 +212,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -194,7 +226,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -206,7 +240,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -218,7 +254,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -230,7 +268,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -242,7 +282,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -254,7 +296,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -266,7 +310,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -278,7 +324,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -290,7 +338,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -302,7 +352,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -314,7 +366,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -326,7 +380,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -338,7 +394,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -350,7 +408,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -362,7 +422,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -374,7 +436,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -386,7 +450,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -398,7 +464,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -410,7 +478,9 @@
             "includes_any": [
                 "JavaScript",
                 "Lisp",
-                "Typescript"
+                "Typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -420,8 +490,10 @@
         "link": "https://www.docker.com/blog/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -431,8 +503,10 @@
         "link": "https://dropbox.tech/feed",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -442,8 +516,10 @@
         "link": "https://tech.ebayinc.com/rss",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -453,8 +529,10 @@
         "link": "https://www.elastic.co/blog/feed",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -464,8 +542,10 @@
         "link": "https://www.erlang-solutions.com/blog/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -475,8 +555,10 @@
         "link": "https://codeascraft.com/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -486,8 +568,10 @@
         "link": "https://evernote.com/blog/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -497,8 +581,10 @@
         "link": "https://medium.com/feed/expedia-group-tech",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -508,8 +594,10 @@
         "link": "https://engineering.fb.com/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -519,8 +607,10 @@
         "link": "https://code.flickr.net/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -530,8 +620,10 @@
         "link": "https://engineering.flipboard.com/feed.xml",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -541,8 +633,10 @@
         "link": "https://envoy.engineering/feed",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -552,8 +646,10 @@
         "link": "https://medium.com/feed/foursquare-direct/tagged/engineering",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -563,8 +659,10 @@
         "link": "https://galois.com/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -574,8 +672,10 @@
         "link": "https://engineering.giphy.com/feed/",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -585,8 +685,10 @@
         "link": "https://github.blog/engineering.atom",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -596,8 +698,10 @@
         "link": "https://engineering.grab.com/feed.xml",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -607,8 +711,10 @@
         "link": "https://lambda.grofers.com/feed",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -618,8 +724,10 @@
         "link": "https://www.theguardian.com/info/series/engineering-blog/rss",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -629,8 +737,10 @@
         "link": "http://engineering.hackerearth.com/rss",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -640,8 +750,10 @@
         "link": "https://developer.here.com/blog/feed",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -651,8 +763,10 @@
         "link": "https://blog.heroku.com/engineering/feed",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -662,8 +776,10 @@
         "link": "https://www.honeybadger.io/blog/feed.xml",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -673,8 +789,10 @@
         "link": "https://product.hubspot.com/blog/rss.xml",
         "filter": {
             "includes_any": [
-                "Javascript",
-                "Typescript"
+                "javascript",
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -685,7 +803,9 @@
         "filter": {
             "includes_any": [
                 "javascript",
-                "typescript"
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -696,7 +816,9 @@
         "filter": {
             "includes_any": [
                 "javascript",
-                "typescript"
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
@@ -707,7 +829,9 @@
         "filter": {
             "includes_any": [
                 "javascript",
-                "typescript"
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": [
                 "announcement"
@@ -720,7 +844,9 @@
         "filter": {
             "includes_any": [
                 "javascript",
-                "typescript"
+                "typescript",
+                "NodeJs",
+                "Node.Js"
             ],
             "excludes_all": []
         },
