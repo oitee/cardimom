@@ -36,7 +36,9 @@
     ],
     "testTimeout": 60000,
     "modulePathIgnorePatterns": [
-      "./test/pg_utils.js"
-    ]
+      "./test/pg_utils.js",
+      "./test/setup_jest.js"
+    ],
+    "setupFilesAfterEnv": ["./test/setup_jest.js"]
   }
 }
