@@ -63,7 +63,7 @@ To maintain the state of the project, the database should maintain a table conta
 In this project, the database schema (called `posts`) was created by using PostgreSQL. Here's the structure of the database schema:
 
 ```js
-Column    |           Type           | Collation | Nullable | Default 
+Column        |           Type           | Collation | Nullable | Default 
 --------------+--------------------------+-----------+----------+---------
  link         | text                     |           | not null | 
  author       | text                     |           | not null | 
