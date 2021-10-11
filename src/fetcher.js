@@ -23,8 +23,7 @@ export async function findPosts(lastUpdated, blog){
        return listOfPosts;  
       }
       catch (e) {
-       console.error(url);
-       console.error(e);
+       console.error(`Parser Error happened for ${url} with the error: ${e}. Skipping this: ${JSON.stringify(blog)}`);
      }
     }
     return [];
