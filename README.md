@@ -11,10 +11,6 @@ Here's how new posts get published by the Twitter bot, [Cardimom](https://twitte
 
 Once a blog has been added to the config file, the system will parse the blog feed periodically and tweet any new post(s) published by that blog. To this end, a post will be considered to be a 'new post' if it was published after the most recent post tweeted by Cardimom.
 
-Here's an example of a post that was tweeted by the Cardimom:   
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">New blog post by <a href="https://twitter.com/Microsoft?ref_src=twsrc%5Etfw">@Microsoft</a>: Announcing TypeScript 4.5 Beta <a href="https://t.co/roOwQW8Alt">https://t.co/roOwQW8Alt</a></p>&mdash; cardimom (@cardimomT) <a href="https://twitter.com/cardimomT/status/1444095045125165056?ref_src=twsrc%5Etfw">October 2, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 ## Config
 
 The config file contains the list of all the blogs that will be tracked by the system. To add a new blog, a pull request will need to be made to the config file, namely [`blog_spec.json`](https://github.com/oitee/cardimom/blob/main/blog_spec.json). Each entry of the config file relates to a specific blog and it should contain the following properties:
@@ -32,7 +28,7 @@ The purpose of this project is to create a Twitter bot that shares blog-posts re
 To add a new blog, a pull request needs to made with changes in [`blog_spec.json`](https://github.com/oitee/cardimom/blob/main/blog_spec.json) similar to [this commit](https://github.com/oitee/cardimom/commit/12997431e07ec360c76589e7b51329f109b38248).
 
 ## System Design
-<img src="/assets/images/cardimom_system_design.png" alt="System Design" width="100%"/>
+<img src="https://otee.dev/assets/images/cardimom_system_design.png" alt="System Design" width="60%"/>
 
 **Launcher:** This module triggers the system. It is run periodically, after every 60 minutes.
 
@@ -50,7 +46,7 @@ To add a new blog, a pull request needs to made with changes in [`blog_spec.json
 
 The following sequence diagram provides a more detailed description of how the control flows through the system:
 
-<img src="/assets/images/cardimom_control_flow.png" alt="Control Flow" width="100%"/>
+<img src="https://otee.dev/assets/images/cardimom_control_flow.png" alt="Control Flow" width="100%"/>
 
 
 ## Database Schema
@@ -188,20 +184,8 @@ Here are some of the major limitations, arising out of the design of the project
 - **System-wide cursor:** The determination of whether a post is considered to be a 'new' post (therefore due for publication on Twitter), is based on the latest timestamp retrieved from the database. As the system does not carry out this check at the level of each blog, it is possible that the system may skip certain posts that carry an older timestamp than the latest timestamp available on the database. This can happen if, for example, a blog sets a default timestamp (eg. midnight) for its posts.
 - **Rate limitations:** If, during any cycle of execution, the Cardimom Twitter account hits Twitter's rate limit, some of the posts (due for publication during that cycle) will not be published on Twitter. However, the system will deem them as having been published (as the database will contain all those posts).  Thus, the system currently does not provide for an effective handling of unpublished tweets, caused due to Twitter's rate-limitations.
 - **XML format:** The system only supports feeds that are generated in XML format. Further, as noted above, the system will not be able to parse feeds that do not comply with the corresponding specifications of either RSS or atom.
-- **Length of each tweet:** For each new blog-post, the system builds a tweet in the following format: ``New blog post by ${post.twitter_username}: ${post.title} ${post.link}``. Thus, for example, for the post on [hash tables](https://otee.dev/2021/10/01/hash-tables.html) published earlier on this Blog, the system published the following tweet:
+- **Length of each tweet:** For each new blog-post, the system builds a tweet in the following format: ``New blog post by ${post.twitter_username}: ${post.title} ${post.link}``.
     
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">New blog post by <a href="https://twitter.com/oteecodes?ref_src=twsrc%5Etfw">@oteecodes</a>: Hash Tables <a href="https://t.co/3zCQb2LBqD">https://t.co/3zCQb2LBqD</a></p>&mdash; cardimom (@cardimomT) <a href="https://twitter.com/cardimomT/status/1443802052329709575?ref_src=twsrc%5Etfw">October 1, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
-    If, however, for a given post, the length of the tweet exceeds Twitter's 280-character limit, the system builds a truncated alternative version of the tweet, in the following manner: ``${post.twitter_username} posted ${post.link}`` . For example, for this [post](https://decentralizedthoughts.github.io/2021-10-04-crusader-agreement-with-dollars-slash-leq-1-slash-3$-error-is-impossible-for-$n-slash-leq-3f$-if-the-adversary-can-simulate/) (with a relatively long URL: "[https://decentralizedthoughts.github.io/2021-10-04-crusader-agreement-with-dollars-slash-leq-1-slash-3$-error-is-impossible-for-$n-slash-leq-3f$-if-the-adversary-can-simulate/](https://decentralizedthoughts.github.io/2021-10-04-crusader-agreement-with-dollars-slash-leq-1-slash-3$-error-is-impossible-for-$n-slash-leq-3f$-if-the-adversary-can-simulate/)"), the system published the following tweet:
-    
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/ittaia?ref_src=twsrc%5Etfw">@ittaia</a> posted <a href="https://t.co/bU92rff8cq">https://t.co/bU92rff8cq</a></p>&mdash; cardimom (@cardimomT) <a href="https://twitter.com/cardimomT/status/1445039843885690883?ref_src=twsrc%5Etfw">October 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
-    If the length of the tweet still exceeds the 280-character limit, the system will skip that post, instead of truncating its length any further, or dividing it into multiple threads. Thus, it is expected that, for some posts, the **system will fail to publish a tweet, owing to size restrictions**.  
+    If, however, for a given post, the length of the tweet exceeds Twitter's 280-character limit, the system builds a truncated alternative version of the tweet, in the following manner: ``${post.twitter_username} posted ${post.link}``. If the length of the tweet still exceeds the 280-character limit, the system will skip that post, instead of truncating its length any further, or dividing it into multiple threads. Thus, it is expected that, for some posts, the **system will fail to publish a tweet, owing to size restrictions**.  
     
 - **Filter logic:** The system applies the filter logic (both exclusion and inclusion of keywords) on the content of each post, as available on the respective feed. It does not fetch the contents of the post from the respective URL. Thus, if the feed of a blog provides a truncated version of the contents of that post, the filter logic will be applied only on that truncated version.
-
-## Latest Tweet
-
-Here's the latest tweet published by Cardimom:
-
-<a class="twitter-timeline" data-width="550"  href="[https://twitter.com/cardimomT?ref_src=twsrc^tfw](https://twitter.com/cardimomT?ref_src=twsrc%5Etfw)" data-chrome="noheader" data-tweet-limit="1" >Latest Tweets</a> <script async src="[https://platform.twitter.com/widgets.js](https://platform.twitter.com/widgets.js)" charset="utf-8"></script>
