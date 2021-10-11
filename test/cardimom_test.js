@@ -60,7 +60,7 @@ function createMockTweets(listOfPosts) {
 
 let config = [
   {
-    link: "https://otee.dev/feed.xml",
+    link: "https://otee.dev/assets/samples/feed_sample",
     filter: {
       includes_any: ["implement"],
       excludes_all: ["LISP"],
@@ -76,7 +76,6 @@ test("empty database test", async () => {
   assert.ok(setOfTweets.has("Implementing Graphs@oteecodes"));
   assert.ok(setOfTweets.has("Implementing Binary Search@oteecodes"));
   assert.ok(setOfTweets.has("Implementing Stacks@oteecodes"));
-  //assert.ok(setOfTweets.has("Valid Parenthesis@oteecodes"));
 });
 
 test("idempotent run", async () => {
@@ -86,7 +85,7 @@ test("idempotent run", async () => {
 
 config = [
   {
-    link: "https://otee.dev/feed.xml",
+    link: "https://otee.dev/assets/samples/feed_sample",
     filter: {
       includes_any: ["implement"],
       excludes_all: ["LISP"],
@@ -94,7 +93,7 @@ config = [
     twitter_username: "@oteecodes",
   },
   {
-    link: "https://otee.dev/feed.xml",
+    link: "https://otee.dev/assets/samples/feed_sample",
     filter: {
       includes_any: ["implement"],
       excludes_all: ["LISP"],
@@ -102,7 +101,7 @@ config = [
     twitter_username: "@oteecodes",
   },
   {
-    link: "https://otee.dev/feed.xml",
+    link: "https://otee.dev/assets/samples/feed_sample",
     filter: {
       includes_any: ["implement"],
       excludes_all: ["LISP"],
@@ -118,7 +117,6 @@ test("duplicated config-- empty database test", async () => {
   assert.ok(setOfTweets.has("Implementing Graphs@oteecodes"));
   assert.ok(setOfTweets.has("Implementing Binary Search@oteecodes"));
   assert.ok(setOfTweets.has("Implementing Stacks@oteecodes"));
-  //assert.ok(setOfTweets.has("Valid Parenthesis@oteecodes"));
 });
 
 test("duplicated config-- idempotent run", async () => {
