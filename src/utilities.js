@@ -45,16 +45,17 @@ let sampleConfig = [
   // },
 ];
 
-if (process.env.CONFIG_FILE_PATH) {
-  console.log(`Reading config from file: ${process.env.CONFIG_FILE_PATH}`);
-  sampleConfig = JSON.parse(readFileSync(process.env.CONFIG_FILE_PATH, "utf8"));
-} else {
-  console.log(`Reading sample config`);
-}
-
-const listOfBlogs = config_reader.reader(sampleConfig);
 
 export async function trialRun() {
+  if (process.env.CONFIG_FILE_PATH) {
+    console.log(`Reading config from file: ${process.env.CONFIG_FILE_PATH}`);
+    sampleConfig = JSON.parse(readFileSync(process.env.CONFIG_FILE_PATH, "utf8"));
+  } else {
+    console.log(`Reading sample config`);
+  }
+  
+  const listOfBlogs = config_reader.reader(sampleConfig);  
+  
   try {
     let lastUpdated = null;
     let listOfPosts = await Promise.all(
