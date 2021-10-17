@@ -1089,5 +1089,57 @@
       "excludes_all": []
     },
     "twitter_username": "@opentable"
-  } 
+  },
+  {
+    "link": "https://medium.com/feed/paypal-tech",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@PayPalEng"
+  },
+  {
+    "link": "https://developers.redhat.com/blog/feed/atom",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@rhdevelopers"
+  },
+  {
+    "link": "https://medium.com/feed/better-practices",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@getpostman"
+  },
+  {
+    "link": "https://www.rea-group.com/category/tech/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@REA_Group"
+  }
 ]
