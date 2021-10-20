@@ -1141,5 +1141,201 @@
       "excludes_all": []
     },
     "twitter_username": "@REA_Group"
+  },
+  {
+    "link": "https://blog.sift.com/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@GetSift"
+  },
+  {
+    "link": "https://slack.engineering/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@slackhq"
+  },
+  {
+    "link": "https://developers.soundcloud.com/blog/blog.rss",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@soundclouddev"
+  },
+  {
+    "link": "https://engineering.atspotify.com/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@spotifyeng"
+  },
+  {
+    "link": "https://stackoverflow.blog/engineering/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@stackoverflow"
+  },
+  {
+    "link": "https://tech.small-improvements.com/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@smallimprove"
+  },
+  {
+    "link": "https://up.smartrecruiters.com/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@smartrecruiters"
+  },
+  {
+    "link": "https://medium.com/feed/square-corner-blog",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@squareeng"
+  },
+  {
+    "link": "https://medium.com/feed/strava-engineering",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@stravaeng"
+  },
+  {
+    "link": "https://stripe.com/blog/feed.rss",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@stripe"
+  },
+  {
+    "link": "https://bytes.swiggy.com/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@swiggyTech"
+  },
+  {
+    "link": "https://thoughtbot.com/blog/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@thoughtbot"
+  },
+  {
+    "link": "https://www.percona.com/blog/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@percona"
+  },
+  {
+    "link": "https://buttondown.email/cassidoo/rss",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@cassidoo"
   }
 ]
