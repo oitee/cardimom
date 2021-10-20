@@ -37,4 +37,5 @@ async function launch() {
   console.log("Finished reading blogs");
 }
 await launch();
-setInterval(launch, 60 * 60 * 1000);
+await db.poolEnd();
+// setInterval(launch, 60 * 60 * 1000);
