@@ -28,13 +28,13 @@ async function launch() {
     );
     listOfPosts = listOfPosts.flatMap((post) => post);
 
-    db.selectNewPosts(listOfPosts)
+     await db.selectNewPosts(listOfPosts)
       .then(db.addNewPosts)
-      .then((newPosts) => twitter.publishTweets(twitterCredentials, newPosts));
+      .then((newPosts) => twitter.publishTweets(twitterCredentials, newPosts))
+      .then(() => console.log("Finished reading blogs"));
   } catch (e) {
     console.error(`Something went wrong: ${e}`);
   }
-  console.log("Finished reading blogs");
 }
 await launch();
 await db.poolEnd();
