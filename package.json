@@ -7,7 +7,8 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage=true -i",
     "start": "node ./src/launcher.js",
     "local_test": "TEST_POSTGRES_HOST=localhost TEST_POSTGRES_PORT=5432 TEST_POSTGRES_PASSWORD=test123 TEST_POSTGRES_DB=cardimom_test npm test",
-    "trial_run": "node -e 'import(\"./src/utilities.js\").then(utils => utils.trialRun());'"
+    "trial_run": "node -e 'import(\"./src/utilities.js\").then(utils => utils.trialRun());'",
+    "local_dry_run": "DATABASE_URL=postgres://postgres:test123@localhost:5432/cardimom DRY_RUN=true node src/launcher.js"
   },
   "repository": {
     "type": "git",
