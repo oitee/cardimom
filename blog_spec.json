@@ -1337,5 +1337,131 @@
       "excludes_all": []
     },
     "twitter_username": "@cassidoo"
+  },
+  {
+    "link": "https://www.thoughtworks.com/rss/insights.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@thoughtworks"
+  },
+  {
+    "link": "https://www.toptal.com/blog.rss",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@toptal"
+  },
+  {
+    "link": "https://medium.com/feed/walmartglobaltech",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@walmarttech"
+  },
+  {
+    "link": "https://wecode.wepay.com/feed.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@wepayeng"
+  },
+  {
+    "link": "https://engineering.wingify.com/atom.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@wingify_engg"
+  },
+  {
+    "link": "https://engineeringblog.yelp.com/feed.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@YelpEngineering"
+  },
+  {
+    "link": "https://medium.com/feed/twitch-news/tagged/engineering",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@Twitch"
+  },
+  {
+    "link": "https://yahooeng.tumblr.com/rss",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@ydn"
+  },
+  {
+    "link": "https://medium.com/feed/tinder-engineering",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@TinderEng"
   }
 ]
