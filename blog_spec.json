@@ -1,867 +1,866 @@
 [
-    {
-        "link": "https://hacks.mozilla.org/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@mozilla"
+  {
+    "link": "https://hacks.mozilla.org/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://otee.dev/feed.xml",
-        "filter": {
-            "includes_any": [],
-            "excludes_all": []
-        },
-        "twitter_username": "@oteecodes"
+    "twitter_username": "@mozilla"
+  },
+  {
+    "link": "https://otee.dev/feed.xml",
+    "filter": {
+      "includes_any": [],
+      "excludes_all": []
     },
-    {
-        "link": "https://mourjo.me/blog/feed.xml",
-        "filter": {
-            "includes_any": [
-                "engineering",
-                "computer",
-                "JavaScript",
-                "TypeScript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": [
-                "Load Shedding in Clojure"
-            ]
-        },
-        "twitter_username": "@mourjo_sen"
+    "twitter_username": "@oteecodes"
+  },
+  {
+    "link": "https://mourjo.me/blog/feed.xml",
+    "filter": {
+      "includes_any": [
+        "engineering",
+        "computer",
+        "JavaScript",
+        "TypeScript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": [
+        "Load Shedding in Clojure"
+      ]
     },
-    {
-        "link": "https://devblogs.microsoft.com/landingpage/",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@Microsoft"
+    "twitter_username": "@mourjo_sen"
+  },
+  {
+    "link": "https://devblogs.microsoft.com/landingpage/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://medium.com/feed/@mourjo_sen",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@mourjo_sen"
+    "twitter_username": "@Microsoft"
+  },
+  {
+    "link": "https://medium.com/feed/@mourjo_sen",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://engineering.razorpay.com/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@RazorpayEngg"
+    "twitter_username": "@mourjo_sen"
+  },
+  {
+    "link": "https://engineering.razorpay.com/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://medium.com/feed/helpshift-engineering",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@HelpshiftEng"
+    "twitter_username": "@RazorpayEngg"
+  },
+  {
+    "link": "https://medium.com/feed/helpshift-engineering",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://netflixtechblog.com/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@NetflixEng"
+    "twitter_username": "@HelpshiftEng"
+  },
+  {
+    "link": "https://netflixtechblog.com/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://eng.uber.com/feed/",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@UberEng"
+    "twitter_username": "@NetflixEng"
+  },
+  {
+    "link": "https://eng.uber.com/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://blog.cloudflare.com/tag/engineering/rss/",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@Cloudflare"
+    "twitter_username": "@UberEng"
+  },
+  {
+    "link": "https://blog.cloudflare.com/tag/engineering/rss/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://decentralizedthoughts.github.io/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@ittaia"
+    "twitter_username": "@Cloudflare"
+  },
+  {
+    "link": "https://decentralizedthoughts.github.io/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.technologyreview.com/topic/computing/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@techreview"
+    "twitter_username": "@ittaia"
+  },
+  {
+    "link": "https://www.technologyreview.com/topic/computing/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://blog.allegro.tech/feed.xml",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@allegrotech"
+    "twitter_username": "@techreview"
+  },
+  {
+    "link": "https://blog.allegro.tech/feed.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://developers.500px.com/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@500px"
+    "twitter_username": "@allegrotech"
+  },
+  {
+    "link": "https://developers.500px.com/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://medium.com/feed/airbnb-engineering",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@AirbnbEng"
+    "twitter_username": "@500px"
+  },
+  {
+    "link": "https://medium.com/feed/airbnb-engineering",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://blog.asana.com/feed/",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@asana"
+    "twitter_username": "@AirbnbEng"
+  },
+  {
+    "link": "https://blog.asana.com/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://blog.developer.atlassian.com/feed/",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@atlassiandev"
+    "twitter_username": "@asana"
+  },
+  {
+    "link": "https://blog.developer.atlassian.com/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://planet.postgresql.org/rss20.xml",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@planetpostgres"
+    "twitter_username": "@atlassiandev"
+  },
+  {
+    "link": "https://planet.postgresql.org/rss20.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://aws.amazon.com/blogs/aws/feed/",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@awscloud"
+    "twitter_username": "@planetpostgres"
+  },
+  {
+    "link": "https://aws.amazon.com/blogs/aws/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://medium.com/feed/xandr-tech",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@xandr"
+    "twitter_username": "@awscloud"
+  },
+  {
+    "link": "https://medium.com/feed/xandr-tech",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://auth0.com/blog/rss.xml",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@auth0"
+    "twitter_username": "@xandr"
+  },
+  {
+    "link": "https://auth0.com/blog/rss.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://cms.babbel.news/feed/?post_type=english_edition",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@babbel"
+    "twitter_username": "@auth0"
+  },
+  {
+    "link": "https://cms.babbel.news/feed/?post_type=english_edition",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://medium.com/feed/bbc-design-engineering",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@YourBBCDigital"
+    "twitter_username": "@babbel"
+  },
+  {
+    "link": "https://medium.com/feed/bbc-design-engineering",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://tech.buzzfeed.com/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@buzzfeedexp"
+    "twitter_username": "@YourBBCDigital"
+  },
+  {
+    "link": "https://tech.buzzfeed.com/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://engineering.cerner.com/index.xml",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@CernerEng"
+    "twitter_username": "@buzzfeedexp"
+  },
+  {
+    "link": "https://engineering.cerner.com/index.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.cloudbees.com/blog.xml",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@CloudBees"
+    "twitter_username": "@CernerEng"
+  },
+  {
+    "link": "https://www.cloudbees.com/blog.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://blog.cloudera.com/feed/",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@cloudera"
+    "twitter_username": "@CloudBees"
+  },
+  {
+    "link": "https://blog.cloudera.com/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.cockroachlabs.com/blog/index.xml",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@CockroachDB"
+    "twitter_username": "@cloudera"
+  },
+  {
+    "link": "https://www.cockroachlabs.com/blog/index.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.codementor.io/community/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@CodementorIO"
+    "twitter_username": "@CockroachDB"
+  },
+  {
+    "link": "https://www.codementor.io/community/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.confluent.io/rss.xml",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@confluentinc"
+    "twitter_username": "@CodementorIO"
+  },
+  {
+    "link": "https://www.confluent.io/rss.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.digitalocean.com/blog/rss/?",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@digitalocean"
+    "twitter_username": "@confluentinc"
+  },
+  {
+    "link": "https://www.digitalocean.com/blog/rss/?",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://blog.discord.com/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@discord"
+    "twitter_username": "@digitalocean"
+  },
+  {
+    "link": "https://blog.discord.com/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://product.canva.com/feed.xml",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@CanvaTech"
+    "twitter_username": "@discord"
+  },
+  {
+    "link": "https://product.canva.com/feed.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://clevertap.com/blog/tag/engineering/feed/",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@CleverTap"
+    "twitter_username": "@CanvaTech"
+  },
+  {
+    "link": "https://clevertap.com/blog/tag/engineering/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://crowdfire.engineering/feed",
-        "filter": {
-            "includes_any": [
-                "JavaScript",
-                "Lisp",
-                "Typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@wearecrowdfire"
+    "twitter_username": "@CleverTap"
+  },
+  {
+    "link": "https://crowdfire.engineering/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.docker.com/blog/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@docker"
+    "twitter_username": "@wearecrowdfire"
+  },
+  {
+    "link": "https://www.docker.com/blog/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://dropbox.tech/feed",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@Dropbox"
+    "twitter_username": "@docker"
+  },
+  {
+    "link": "https://dropbox.tech/feed",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://tech.ebayinc.com/rss",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@ebaytech"
+    "twitter_username": "@Dropbox"
+  },
+  {
+    "link": "https://tech.ebayinc.com/rss",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.elastic.co/blog/feed",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@elastic"
+    "twitter_username": "@ebaytech"
+  },
+  {
+    "link": "https://www.elastic.co/blog/feed",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.erlang-solutions.com/blog/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@ErlangSolutions"
+    "twitter_username": "@elastic"
+  },
+  {
+    "link": "https://www.erlang-solutions.com/blog/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://codeascraft.com/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@codeascraft"
+    "twitter_username": "@ErlangSolutions"
+  },
+  {
+    "link": "https://codeascraft.com/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://evernote.com/blog/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@evernote"
+    "twitter_username": "@codeascraft"
+  },
+  {
+    "link": "https://evernote.com/blog/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://medium.com/feed/expedia-group-tech",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@ExpediaGroupEng"
+    "twitter_username": "@evernote"
+  },
+  {
+    "link": "https://medium.com/feed/expedia-group-tech",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://engineering.fb.com/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@fb_engineering"
+    "twitter_username": "@ExpediaGroupEng"
+  },
+  {
+    "link": "https://engineering.fb.com/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://code.flickr.net/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@flickr"
+    "twitter_username": "@fb_engineering"
+  },
+  {
+    "link": "https://code.flickr.net/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://engineering.flipboard.com/feed.xml",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@Flipboard"
+    "twitter_username": "@flickr"
+  },
+  {
+    "link": "https://engineering.flipboard.com/feed.xml",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://envoy.engineering/feed",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@envoy"
+    "twitter_username": "@Flipboard"
+  },
+  {
+    "link": "https://envoy.engineering/feed",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://medium.com/feed/foursquare-direct/tagged/engineering",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@Foursquare"
+    "twitter_username": "@envoy"
+  },
+  {
+    "link": "https://medium.com/feed/foursquare-direct/tagged/engineering",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://galois.com/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@galois"
+    "twitter_username": "@Foursquare"
+  },
+  {
+    "link": "https://galois.com/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://engineering.giphy.com/feed/",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@GiphyEng"
+    "twitter_username": "@galois"
+  },
+  {
+    "link": "https://engineering.giphy.com/feed/",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://github.blog/engineering.atom",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@GitHubEng"
+    "twitter_username": "@GiphyEng"
+  },
+  {
+    "link": "https://github.blog/engineering.atom",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://engineering.grab.com/feed.xml",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@grabengineering"
+    "twitter_username": "@GitHubEng"
+  },
+  {
+    "link": "https://engineering.grab.com/feed.xml",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://lambda.grofers.com/feed",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@groferseng"
+    "twitter_username": "@grabengineering"
+  },
+  {
+    "link": "https://lambda.grofers.com/feed",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.theguardian.com/info/series/engineering-blog/rss",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@gdndevelopers"
+    "twitter_username": "@groferseng"
+  },
+  {
+    "link": "https://www.theguardian.com/info/series/engineering-blog/rss",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "http://engineering.hackerearth.com/rss",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@HackerEarth"
+    "twitter_username": "@gdndevelopers"
+  },
+  {
+    "link": "http://engineering.hackerearth.com/rss",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://developer.here.com/blog/feed",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@heredev"
+    "twitter_username": "@HackerEarth"
+  },
+  {
+    "link": "https://developer.here.com/blog/feed",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://blog.heroku.com/engineering/feed",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@heroku"
+    "twitter_username": "@heredev"
+  },
+  {
+    "link": "https://blog.heroku.com/engineering/feed",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.honeybadger.io/blog/feed.xml",
-        "filter": {
-            "includes_any": [
-                "console.log",
-                "functional programming",
-                "EMCA",
-                "==="
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@honeybadgerapp"
+    "twitter_username": "@heroku"
+  },
+  {
+    "link": "https://www.honeybadger.io/blog/feed.xml",
+    "filter": {
+      "includes_any": [
+        "console.log",
+        "functional programming",
+        "EMCA",
+        "==="
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://product.hubspot.com/blog/rss.xml",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@HubSpotDev"
+    "twitter_username": "@honeybadgerapp"
+  },
+  {
+    "link": "https://product.hubspot.com/blog/rss.xml",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://www.hashicorp.com/blog/feed.xml",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@hashicorp"
+    "twitter_username": "@HubSpotDev"
+  },
+  {
+    "link": "https://www.hashicorp.com/blog/feed.xml",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://hashrocket.com/blog/posts.rss",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@hashrocket"
+    "twitter_username": "@hashicorp"
+  },
+  {
+    "link": "https://hashrocket.com/blog/posts.rss",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-    {
-        "link": "https://engineering.hashnode.com/rss.xml",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": [
-                "announcement"
-            ]
-        },
-        "twitter_username": "@hashnode"
+    "twitter_username": "@hashrocket"
+  },
+  {
+    "link": "https://engineering.hashnode.com/rss.xml",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": [
+        "announcement"
+      ]
     },
-    {
-        "link": "https://medium.com/feed/engineering-housing",
-        "filter": {
-            "includes_any": [
-                "javascript",
-                "typescript",
-                "NodeJs",
-                "Node.Js"
-            ],
-            "excludes_all": []
-        },
-        "twitter_username": "@HousingEngg"
+    "twitter_username": "@hashnode"
+  },
+  {
+    "link": "https://medium.com/feed/engineering-housing",
+    "filter": {
+      "includes_any": [
+        "javascript",
+        "typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
     },
-
+    "twitter_username": "@HousingEngg"
+  },
   {
     "link": "http://engineering.indeedblog.com/feed/",
     "filter": {
-        "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@IndeedEng"
@@ -870,12 +869,12 @@
     "link": "https://tech.instacart.com/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@instacart"
@@ -884,12 +883,12 @@
     "link": "https://eng.lyft.com/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@lyfteng"
@@ -898,12 +897,12 @@
     "link": "https://medium.engineering/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@MediumEng"
@@ -912,12 +911,12 @@
     "link": "https://www.singlestore.com/blog/feed.xml",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@singlestoredb"
@@ -926,12 +925,12 @@
     "link": "https://engineering.mixpanel.com/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@mixpanel"
@@ -940,12 +939,12 @@
     "link": "https://devblogs.microsoft.com/python/feed/",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "pythonvscode"
@@ -954,12 +953,12 @@
     "link": "https://instagram-engineering.com/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@instagrameng"
@@ -968,12 +967,12 @@
     "link": "https://kickstarter.engineering/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@Kickstarter"
@@ -982,12 +981,12 @@
     "link": "https://engineering.mongodb.com/post?format=RSS",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@mongodbeng"
@@ -996,12 +995,12 @@
     "link": "https://open.nytimes.com/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@nytopen"
@@ -1010,12 +1009,12 @@
     "link": "https://nordicapis.com/feed/",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@nordicapis"
@@ -1024,12 +1023,12 @@
     "link": "https://blogs.nvidia.com/feed/",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@nvidia"
@@ -1038,12 +1037,12 @@
     "link": "https://developer.okta.com/feed.xml",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@OktaDev"
@@ -1052,12 +1051,12 @@
     "link": "https://tech.olx.com/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@olxgrouptech"
@@ -1066,12 +1065,12 @@
     "link": "https://umbrella.cisco.com/blog/feed",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@CiscoUmbrella"
@@ -1080,12 +1079,12 @@
     "link": "https://tech.opentable.com/feed/",
     "filter": {
       "includes_any": [
-            "JavaScript",
-            "Lisp",
-            "Typescript",
-            "NodeJs",
-            "Node.Js"
-        ],
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
       "excludes_all": []
     },
     "twitter_username": "@opentable"
@@ -1463,5 +1462,187 @@
       "excludes_all": []
     },
     "twitter_username": "@TinderEng"
+  },
+  {
+    "link": "http://planet.clojure.in/atom.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@planetclojure"
+  },
+  {
+    "link": "https://engineering.klarna.com/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@klarna"
+  },
+  {
+    "link": "https://nodesource.com/blog/rss",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@nodesource"
+  },
+  {
+    "link": "https://airbrake.io/blog/category/nodejs/feed",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@airbrake"
+  },
+  {
+    "link": "https://nodejs.org/en/feed/blog.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@nodejs"
+  },
+  {
+    "link": "https://cprss.s3.amazonaws.com/nodeweekly.com.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@nodeweeklyfeed"
+  },
+  {
+    "link": "https://github.blog/all.atom",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@github"
+  },
+  {
+    "link": "https://blog.postman.com/feed/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@getpostman"
+  },
+  {
+    "link": "https://code.visualstudio.com/feed.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@code"
+  },
+  {
+    "link": "https://feeds.works-hub.com/rss-functional.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@functionalworks"
+  },
+  {
+    "link": "https://blog.nilenso.com/atom.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@nilenso"
+  },
+  {
+    "link": "https://blog.codinghorror.com/rss/",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@codinghorror"
+  },
+  {
+    "link": "https://www.quastor.org/feed.xml",
+    "filter": {
+      "includes_any": [
+        "JavaScript",
+        "Lisp",
+        "Typescript",
+        "NodeJs",
+        "Node.Js"
+      ],
+      "excludes_all": []
+    },
+    "twitter_username": "@QuaestorTech"
   }
 ]
