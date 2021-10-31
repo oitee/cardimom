@@ -14,7 +14,7 @@ const twitterCredentials = {
   access_token_secret: process.env.ACCESS_TOKEN_SECRET,
 };
 
-db.poolStart(process.env.DATABASE_URL);
+db.poolStart(process.env.DATABASE_URL, process.env.SSL_UNSUPPORTED !=='true');
 
 async function launch() {
   console.log("Starting to read blogs");
