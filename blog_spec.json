@@ -1110,5 +1110,61 @@
       "excludes_all": []
     },
     "twitter_username": "@BrendanEich"
+  },
+  {
+    "link": "https://planetscale.com/blog/rss.xml",
+    "filter": {
+      "includes_any": ["JavaScript", "Lisp", "Typescript", "NodeJs", "Node.Js"],
+      "excludes_all": []
+    },
+    "twitter_username": "@planetscaledata"
+  },
+  {
+    "link": "https://apenwarr.ca/log/rss.php",
+    "filter": {
+      "includes_any": ["JavaScript", "Lisp", "Typescript", "NodeJs", "Node.Js"],
+      "excludes_all": []
+    },
+    "twitter_username": "@apenwarr"
+  },
+  {
+    "link": "https://tsh.io/blog/feed/",
+    "filter": {
+      "includes_any": ["JavaScript", "Lisp", "Typescript", "NodeJs", "Node.Js"],
+      "excludes_all": []
+    },
+    "twitter_username": "@RealTSH"
+  },
+  {
+    "link": "http://rocksdb.org/feed.xml",
+    "filter": {
+      "includes_any": ["JavaScript", "Lisp", "Typescript", "NodeJs", "Node.Js"],
+      "excludes_all": []
+    },
+    "twitter_username": "@fbOpenSource"
+  },
+  {
+    "link": "https://blog.jooq.org/feed/",
+    "filter": {
+      "includes_any": ["JavaScript", "Lisp", "Typescript", "NodeJs", "Node.Js"],
+      "excludes_all": []
+    },
+    "twitter_username": "@JavaOOQ"
+  },
+  {
+    "link": "https://fuzzyblog.io//blog/feed.xml",
+    "filter": {
+      "includes_any": ["JavaScript", "Lisp", "Typescript", "NodeJs", "Node.Js"],
+      "excludes_all": []
+    },
+    "twitter_username": "@fuzzygroup"
+  },
+  {
+    "link": "https://swizec.com/rss.xml",
+    "filter": {
+      "includes_any": ["JavaScript", "Lisp", "Typescript", "NodeJs", "Node.Js"],
+      "excludes_all": []
+    },
+    "twitter_username": "@Swizec"
   }
 ]
