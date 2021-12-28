@@ -1166,5 +1166,411 @@
       "excludes_all": []
     },
     "twitter_username": "@Swizec"
-  }
+  },
+  {
+    "link": "https://ohhelloana.blog/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@ohhelloana"
+},
+{
+    "link": "https://beko.famkos.net/feed/",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@bekopharm"
+},
+{
+    "link": "https://hacdias.com/.json",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@hacdias"
+},
+{
+    "link": "https://www.splitbrain.org/feed/blog",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@splitbrain"
+},
+{
+    "link": "https://healeycodes.com/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@healeycodes"
+},
+{
+    "link": "https://antonz.org/rss/",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@ohmypy"
+},
+{
+    "link": "https://ashfurrow.com/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@ashfurrow"
+},
+{
+    "link": "https://apenwarr.ca/log/rss.php",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@apenwarr"
+},
+{
+    "link": "https://barryfrost.com/feed.json",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@barryf"
+},
+{
+    "link": "https://benjamincongdon.me/blog/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@BenRCongdon"
+},
+{
+    "link": "https://bnolet.me/index.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@linuxliaison"
+},
+{
+    "link": "https://chriswiegman.com/feed/",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@ChrisWiegman"
+},
+{
+    "link": "https://dannyvankooten.com/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@dannyvankooten"
+},
+{
+    "link": "https://desmondrivet.com/feeds/blog.rss",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@desmondrivet"
+},
+{
+    "link": "https://jfenn.me/blog/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@fennifith"
+},
+{
+    "link": "https://blog.jessfraz.com/index.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@8rnAg1dsPd"
+},
+{
+    "link": "https://kevq.uk/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@kevquirk"
+},
+{
+    "link": "https://www.manton.org/feed.json",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@mantonsblog"
+},
+{
+    "link": "https://martinschneider.me/articles/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@schneyra"
+},
+{
+    "link": "https://www.arp242.net/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@arp242"
+},
+{
+    "link": "https://write.as/matt/feed/",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@ilikebeans"
+},
+{
+    "link": "https://micro.baer.works/feed/",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@ilikebeans"
+},
+{
+    "link": "https://mtlynch.io/index.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@deliberatecoder"
+},
+{
+    "link": "https://rakhim.org/index.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@freetonik"
+},
+{
+    "link": "https://rusingh.com/feed/",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@iamhirusi"
+},
+{
+    "link": "https://stanislas.blog/atom.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@fuolpit"
+},
+{
+    "link": "https://linuxrig.com/feed/",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@steven_ovadia"
+},
+{
+    "link": "https://tinyprojects.dev/feed.xml",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@tinyprojectsdev"
+},
+{
+    "link": "http://n-gate.com/hackernews/index.atom",
+    "filter": {
+        "includes_any": [
+            "JavaScript",
+            "Lisp",
+            "Typescript",
+            "NodeJs",
+            "Node.Js"
+        ],
+        "excludes_all": []
+    },
+    "twitter_username": "@webshitweekly"
+}
 ]
