@@ -1166,5 +1166,13 @@
       "excludes_all": []
     },
     "twitter_username": "@Swizec"
+  },
+  {
+    "link": "https://joy.recurse.com/feed.atom",
+    "filter": {
+      "includes_any": [],
+      "excludes_all": []
+    },
+    "twitter_username": "@recursecenter"
   }
 ]
